@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="07fa5f8f-1206-4def-8f98-f585044268db" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ProjectId" id="2Q6KdP2Ry5HjDvfa1aD7OOPqksn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07fa5f8f-1206-4def-8f98-f585044268db" name="Default Changelist" comment="" />
+      <created>1684668677114</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684668677114</updated>
+      <workItem from="1684668678559" duration="4252000" />
+      <workItem from="1684690682587" duration="3252000" />
+      <workItem from="1684741958161" duration="4562000" />
+      <workItem from="1684754118945" duration="5763000" />
+      <workItem from="1684769714797" duration="8101000" />
+      <workItem from="1684821637550" duration="5383000" />
+      <workItem from="1684832992675" duration="12516000" />
+      <workItem from="1684922740323" duration="986000" />
+      <workItem from="1684924854387" duration="4958000" />
+      <workItem from="1684929962098" duration="50000" />
+      <workItem from="1684930022468" duration="3108000" />
+      <workItem from="1684995397162" duration="24576000" />
+      <workItem from="1685077515170" duration="4743000" />
+      <workItem from="1685110375891" duration="1451000" />
+      <workItem from="1685264335995" duration="12141000" />
+      <workItem from="1685342227495" duration="646000" />
+      <workItem from="1685347337963" duration="14367000" />
+      <workItem from="1685390864693" duration="5967000" />
+      <workItem from="1685427772100" duration="21210000" />
+      <workItem from="1685481012880" duration="3771000" />
+      <workItem from="1685513858580" duration="24184000" />
+      <workItem from="1685559616256" duration="3127000" />
+      <workItem from="1685564956070" duration="5513000" />
+      <workItem from="1685602763282" duration="10652000" />
+      <workItem from="1685752231417" duration="9963000" />
+      <workItem from="1685800897363" duration="15916000" />
+      <workItem from="1685858983558" duration="4774000" />
+      <workItem from="1685875302944" duration="2391000" />
+      <workItem from="1685892370038" duration="8958000" />
+      <workItem from="1685909028446" duration="1076000" />
+      <workItem from="1685946342943" duration="1017000" />
+      <workItem from="1685962066441" duration="3190000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="433" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1685437317416">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="433" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1685437317416" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1684743960578">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1684743960578" />
+    <state x="524" y="108" width="607" height="536" key="find.popup" timestamp="1685760328094">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="524" y="108" width="607" height="536" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1685760328094" />
+    <state x="324" y="90" width="700" height="530" key="recent.locations.popup" timestamp="1684743950851">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="324" y="90" width="700" height="530" key="recent.locations.popup/0.0.1366.728@0.0.1366.728" timestamp="1684743950851" />
+    <state x="339" y="17" width="672" height="676" key="search.everywhere.popup" timestamp="1685526003144">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="17" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1685526003144" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/apps/ecommerce/catalog/add-product.html</url>
+          <line>6233</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/apps/ecommerce/catalog/add-product.html</url>
+          <line>6292</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/apps/ecommerce/catalog/add-product.html</url>
+          <line>6235</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/join_us.html</url>
+          <line>10787</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/join_us.html</url>
+          <line>10952</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
