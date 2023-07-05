@@ -71,6 +71,26 @@ License: For each use you must have a valid license purchased only from above li
             border: 0.5px solid #E1E3EA;
             box-shadow: 0 5px 10px 5px #E1E3EA;
         }
+        .form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-control-plaintext ~ label, .form-floating > .form-select ~ label {
+            opacity: 0.8;
+        }
+        .bank_authorities .btn-check:checked + .btn.btn-outline.btn-outline-dashed, .bank_authorities .btn-check:active + .btn.btn-outline.btn-outline-dashed, .bank_authorities .btn.btn-outline.btn-outline-dashed:focus:not(.btn-active), .bank_authorities .btn.btn-outline.btn-outline-dashed:hover:not(.btn-active), .bank_authorities .btn.btn-outline.btn-outline-dashed:active:not(.btn-active), .bank_authorities .btn.btn-outline.btn-outline-dashed.active, .bank_authorities .btn.btn-outline.btn-outline-dashed.show, .bank_authorities .show > .btn.btn-outline.btn-outline-dashed
+        {
+            border-color: #E1E3EA;
+        }
+        @media (min-width: 992px){
+            .full {
+                min-width: 970px
+            }
+            .custom_separator {
+                border-right: 1px solid #bab6b6;
+            }
+        }
+        @media (max-width: 992px){
+            .custom_separator {
+                border-bottom: 1px solid #bab6b6;
+            }
+        }
     </style>
     <!--Begin::Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -328,11 +348,11 @@ License: For each use you must have a valid license purchased only from above li
                                                     <!--begin::Label-->
                                                     <div class="stepper-label">
                                                         <h3 class="stepper-title">
-                                                            Setup New Company
+                                                            License Details
                                                         </h3>
 
                                                         <div class="stepper-desc fw-semibold">
-                                                            Setup Your Company
+                                                            Setup License Details
                                                         </div>
                                                     </div>
                                                     <!--end::Label-->
@@ -344,7 +364,6 @@ License: For each use you must have a valid license purchased only from above li
                                                 <!--end::Line-->
                                             </div>
                                             <!--end::Step 5-->
-
                                             <!--begin::Step 6-->
                                             <div class="stepper-item" data-kt-stepper-element="nav">
                                                 <!--begin::Wrapper-->
@@ -359,10 +378,11 @@ License: For each use you must have a valid license purchased only from above li
                                                     <!--begin::Label-->
                                                     <div class="stepper-label">
                                                         <h3 class="stepper-title">
-                                                            attachments
+                                                            Partner Details
                                                         </h3>
+
                                                         <div class="stepper-desc fw-semibold">
-                                                           Add attachments Your Company
+                                                            Setup Partner Details
                                                         </div>
                                                     </div>
                                                     <!--end::Label-->
@@ -375,7 +395,7 @@ License: For each use you must have a valid license purchased only from above li
                                             </div>
                                             <!--end::Step 6-->
                                             <!--begin::Step 7-->
-                                            <div class="stepper-item " data-kt-stepper-element="nav">
+                                            <div class="stepper-item" data-kt-stepper-element="nav">
                                                 <!--begin::Wrapper-->
                                                 <div class="stepper-wrapper">
                                                     <!--begin::Icon-->
@@ -388,11 +408,11 @@ License: For each use you must have a valid license purchased only from above li
                                                     <!--begin::Label-->
                                                     <div class="stepper-label">
                                                         <h3 class="stepper-title">
-                                                            Payment
+                                                            Bank Authorities
                                                         </h3>
 
                                                         <div class="stepper-desc fw-semibold">
-                                                             Payments Details
+                                                            Setup Bank Authorities Details
                                                         </div>
                                                     </div>
                                                     <!--end::Label-->
@@ -418,6 +438,126 @@ License: For each use you must have a valid license purchased only from above li
                                                     <!--begin::Label-->
                                                     <div class="stepper-label">
                                                         <h3 class="stepper-title">
+                                                            Ultimate Beneficiary Owners
+                                                        </h3>
+
+                                                        <div class="stepper-desc fw-semibold">
+                                                            Setup Ultimate Beneficiary Owners Details
+                                                        </div>
+                                                    </div>
+                                                    <!--end::Label-->
+                                                </div>
+                                                <!--end::Wrapper-->
+
+                                                <!--begin::Line-->
+                                                <div class="stepper-line h-40px"></div>
+                                                <!--end::Line-->
+                                            </div>
+                                            <!--end::Step 8-->
+                                            <!--begin::Step 9-->
+                                            <div class="stepper-item" data-kt-stepper-element="nav">
+                                                <!--begin::Wrapper-->
+                                                <div class="stepper-wrapper">
+                                                    <!--begin::Icon-->
+                                                    <div class="stepper-icon w-40px h-40px">
+                                                        <i class="stepper-check fas fa-check"></i>
+                                                        <span class="stepper-number">9</span>
+                                                    </div>
+                                                    <!--end::Icon-->
+
+                                                    <!--begin::Label-->
+                                                    <div class="stepper-label">
+                                                        <h3 class="stepper-title">
+                                                            Setup New Company
+                                                        </h3>
+
+                                                        <div class="stepper-desc fw-semibold">
+                                                            Setup Your Company
+                                                        </div>
+                                                    </div>
+                                                    <!--end::Label-->
+                                                </div>
+                                                <!--end::Wrapper-->
+
+                                                <!--begin::Line-->
+                                                <div class="stepper-line h-40px"></div>
+                                                <!--end::Line-->
+                                            </div>
+                                            <!--end::Step 9-->
+
+                                            <!--begin::Step 10-->
+                                            <div class="stepper-item" data-kt-stepper-element="nav">
+                                                <!--begin::Wrapper-->
+                                                <div class="stepper-wrapper">
+                                                    <!--begin::Icon-->
+                                                    <div class="stepper-icon w-40px h-40px">
+                                                        <i class="stepper-check fas fa-check"></i>
+                                                        <span class="stepper-number">10</span>
+                                                    </div>
+                                                    <!--end::Icon-->
+
+                                                    <!--begin::Label-->
+                                                    <div class="stepper-label">
+                                                        <h3 class="stepper-title">
+                                                            attachments
+                                                        </h3>
+                                                        <div class="stepper-desc fw-semibold">
+                                                           Add attachments Your Company
+                                                        </div>
+                                                    </div>
+                                                    <!--end::Label-->
+                                                </div>
+                                                <!--end::Wrapper-->
+
+                                                <!--begin::Line-->
+                                                <div class="stepper-line h-40px"></div>
+                                                <!--end::Line-->
+                                            </div>
+                                            <!--end::Step 10-->
+                                            <!--begin::Step 11-->
+                                            <div class="stepper-item " data-kt-stepper-element="nav">
+                                                <!--begin::Wrapper-->
+                                                <div class="stepper-wrapper">
+                                                    <!--begin::Icon-->
+                                                    <div class="stepper-icon w-40px h-40px">
+                                                        <i class="stepper-check fas fa-check"></i>
+                                                        <span class="stepper-number">11</span>
+                                                    </div>
+                                                    <!--end::Icon-->
+
+                                                    <!--begin::Label-->
+                                                    <div class="stepper-label">
+                                                        <h3 class="stepper-title">
+                                                            Payment
+                                                        </h3>
+
+                                                        <div class="stepper-desc fw-semibold">
+                                                             Payments Details
+                                                        </div>
+                                                    </div>
+                                                    <!--end::Label-->
+                                                </div>
+                                                <!--end::Wrapper-->
+
+                                                <!--begin::Line-->
+                                                <div class="stepper-line h-40px"></div>
+                                                <!--end::Line-->
+                                            </div>
+                                            <!--end::Step 11-->
+                                            <!--begin::Step 12-->
+                                            <div class="stepper-item" data-kt-stepper-element="nav">
+                                                <!--begin::Wrapper-->
+                                                <div class="stepper-wrapper">
+                                                    <!--begin::Icon-->
+                                                    <div class="stepper-icon w-40px h-40px">
+                                                        <i class="stepper-check fas fa-check"></i>
+                                                        <span class="stepper-number">12</span>
+                                                    </div>
+                                                    <!--end::Icon-->
+
+                                                    <!--begin::Label-->
+                                                    <div class="stepper-label">
+                                                        <h3 class="stepper-title">
                                                             Completed
                                                         </h3>
                                                         <div class="stepper-desc fw-semibold">
@@ -431,7 +571,7 @@ License: For each use you must have a valid license purchased only from above li
                                                 <!--begin::Line-->
                                                 <!--end::Line-->
                                             </div>
-                                            <!--end::Step 8-->
+                                            <!--end::Step 12-->
 
 
 
@@ -1270,7 +1410,7 @@ License: For each use you must have a valid license purchased only from above li
                                         <!--begin::Step 2-->
                                         <div data-kt-stepper-element="content" >
                                             <!--begin::Wrapper-->
-                                            <div class="w-100" style="min-width: 990px;">
+                                            <div class="w-100 full">
                                                 <div class="card">
                                                     <!--begin::Content container-->
                                                     <div class="card-body">
@@ -1411,7 +1551,7 @@ License: For each use you must have a valid license purchased only from above li
 
                                                         <div class="row">
                                                             <!--begin::Col-->
-                                                            <div class="col-lg-4 res" id="res1">
+                                                            <div class="col-lg-4 res mb-3" id="res1">
                                                                 <!--begin::Option-->
                                                                 <input class="btn-check reserved" type="radio" name="reserved" value="yes">
                                                                 <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center" for="kt_create_account_form_account_type_corporate">
@@ -1431,7 +1571,7 @@ License: For each use you must have a valid license purchased only from above li
                                                             <!--end::Col-->
 
                                                             <!--begin::Col-->
-                                                            <div class="col-lg-4 res" id="res2">
+                                                            <div class="col-lg-4 res mb-3" id="res2">
                                                                 <!--begin::Option-->
                                                                 <input class="btn-check reserved" type="radio" name="reserved" value="no">
                                                                 <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center" for="kt_create_account_form_account_type_corporate">
@@ -1459,7 +1599,7 @@ License: For each use you must have a valid license purchased only from above li
 
                                                         <div class="row">
                                                             <!--begin::Col-->
-                                                            <div class="col-lg-4" id="lang1">
+                                                            <div class="col-lg-4 mb-3" id="lang1">
                                                                 <!--begin::Option-->
                                                                 <input class="btn-check" type="radio" name="lan" value="en">
                                                                 <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center" for="kt_create_account_form_account_type_corporate">
@@ -1479,7 +1619,7 @@ License: For each use you must have a valid license purchased only from above li
                                                             <!--end::Col-->
 
                                                             <!--begin::Col-->
-                                                            <div class="col-lg-4" id="lang2">
+                                                            <div class="col-lg-4 mb-3" id="lang2">
                                                                 <!--begin::Option-->
                                                                 <input class="btn-check" type="radio" name="lan" value="ar">
                                                                 <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center" for="kt_create_account_form_account_type_corporate">
@@ -1505,7 +1645,7 @@ License: For each use you must have a valid license purchased only from above li
                                                     <div class="row" id="reserved_no">
                                                         <label class="form-label fw-semibold fs-4 mb-7">Provide company name options ? <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Proposed company name in order of preference"></i></label>
                                                         <!--begin::Col-->
-                                                        <div class="col-4">
+                                                        <div class="col-sm-12 col-sm-12 col-lg-4">
                                                             <div class="d-flex flex-column mb-7 fv-row">
                                                                 <!--begin::Label-->
                                                                 <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
@@ -1519,7 +1659,7 @@ License: For each use you must have a valid license purchased only from above li
                                                         <!--end::Col-->
 
                                                         <!--begin::Col-->
-                                                        <div class="col-4">
+                                                        <div class="col-sm-12 col-sm-12 col-lg-4">
                                                             <div class="d-flex flex-column mb-7 fv-row">
                                                                 <!--begin::Label-->
                                                                 <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
@@ -1532,7 +1672,7 @@ License: For each use you must have a valid license purchased only from above li
                                                         </div>
                                                         <!--end::Col-->
                                                         <!--begin::Col-->
-                                                        <div class="col-4">
+                                                        <div class="col-sm-12 col-sm-12 col-lg-4">
                                                             <div class="d-flex flex-column mb-7 fv-row">
                                                                 <!--begin::Label-->
                                                                 <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
@@ -1550,7 +1690,7 @@ License: For each use you must have a valid license purchased only from above li
                                                     <div class="row" id="reserved_yes" style="display:none">
                                                         <label class="form-label fw-semibold fs-4 mb-7">Name reservation details </label>
                                                         <!--begin::Col-->
-                                                        <div class="col-6">
+                                                        <div class="col-sm-12 col-sm-12 col-lg-6">
                                                             <div class="d-flex flex-column mb-7 fv-row">
                                                                 <!--begin::Label-->
                                                                 <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
@@ -1564,7 +1704,7 @@ License: For each use you must have a valid license purchased only from above li
                                                         </div>
                                                         <!--end::Col-->
                                                         <!--begin::Col-->
-                                                        <div class="col-6">
+                                                        <div class="col-sm-12 col-sm-12 col-lg-6">
                                                             <div class="d-flex flex-column mb-7 fv-row">
                                                                 <!--begin::Label-->
                                                                 <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
@@ -1587,7 +1727,7 @@ License: For each use you must have a valid license purchased only from above li
                                                         <div class="col-lg-4" id="trans1">
                                                             <!--begin::Option-->
                                                             <input class="btn-check" type="radio" name="trans" value="direct">
-                                                            <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center" for="kt_create_account_form_account_type_corporate">
+                                                            <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center mb-10" for="kt_create_account_form_account_type_corporate">
                                                                 <!--begin::Svg Icon | path: icons/duotune/finance/fin006.svg-->
                                                                 <span class="svg-icon svg-icon-3x me-5">
                                                                     <i class="fa-solid fa-language fs-2x"></i>
@@ -1607,7 +1747,7 @@ License: For each use you must have a valid license purchased only from above li
                                                         <div class="col-lg-4" id="trans2">
                                                             <!--begin::Option-->
                                                             <input class="btn-check" type="radio" name="trans" value="phonetic">
-                                                            <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center" for="kt_create_account_form_account_type_corporate">
+                                                            <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center mb-10" for="kt_create_account_form_account_type_corporate">
                                                                 <!--begin::Svg Icon | path: icons/duotune/finance/fin006.svg-->
                                                                 <span class="svg-icon svg-icon-3x me-5">
                                                                     <i class="fa-solid fa-headphones fs-2x"></i>
@@ -1627,7 +1767,7 @@ License: For each use you must have a valid license purchased only from above li
                                                         <div class="col-lg-4" id="trans3">
                                                             <!--begin::Option-->
                                                             <input class="btn-check" type="radio" name="trans" value="self">
-                                                            <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center" for="kt_create_account_form_account_type_corporate">
+                                                            <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center mb-10" for="kt_create_account_form_account_type_corporate">
                                                                 <!--begin::Svg Icon | path: icons/duotune/finance/fin006.svg-->
                                                                 <span class="svg-icon svg-icon-3x me-5">
                                                                     <i class="fa-solid fa-rectangle-list fs-2x"></i>
@@ -1649,7 +1789,7 @@ License: For each use you must have a valid license purchased only from above li
                                                     <div class="row mt-7 self_trans_div" style="display:none">
                                                         <label class="form-label fw-semibold fs-4 mb-7">Translated company name <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Description of self translated name"></i></label>
                                                         <!--begin::Col-->
-                                                        <div class="col-4">
+                                                        <div class="col-sm-12 col-sm-12 col-lg-4">
                                                             <div class="d-flex flex-column mb-7 fv-row">
                                                                 <!--begin::Label-->
                                                                 <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
@@ -1663,7 +1803,7 @@ License: For each use you must have a valid license purchased only from above li
                                                         <!--end::Col-->
 
                                                         <!--begin::Col-->
-                                                        <div class="col-4">
+                                                        <div class="col-sm-12 col-sm-12 col-lg-4">
                                                             <div class="d-flex flex-column mb-7 fv-row">
                                                                 <!--begin::Label-->
                                                                 <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
@@ -1676,7 +1816,7 @@ License: For each use you must have a valid license purchased only from above li
                                                         </div>
                                                         <!--end::Col-->
                                                         <!--begin::Col-->
-                                                        <div class="col-4">
+                                                        <div class="col-sm-12 col-sm-12 col-lg-4">
                                                             <div class="d-flex flex-column mb-7 fv-row">
                                                                 <!--begin::Label-->
                                                                 <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
@@ -1707,9 +1847,9 @@ License: For each use you must have a valid license purchased only from above li
                                         <!--end::Step 2-->
 
                                         <!--begin::Step 3-->
-                                        <div data-kt-stepper-element="content" class="custom_content">
+                                        <div data-kt-stepper-element="content" class="custom_content" style="max-width: 100%;">
                                             <!--begin::Wrapper-->
-                                            <div class="w-100" style="min-width: 990px;">
+                                            <div class="w-100 full" style="width:100%">
                                                 <!--begin::Heading-->
                                                 <div class="pb-10 pb-lg-12">
                                                     <!--begin::Title-->
@@ -1753,7 +1893,7 @@ License: For each use you must have a valid license purchased only from above li
                                                     <div class="col-lg-4" id="main2">
                                                         <!--begin::Option-->
                                                         <input type="radio" class="btn-check" name="account_type" value="corporate" id="kt_create_account_form_account_type_corporate">
-                                                        <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center" for="kt_create_account_form_account_type_corporate">
+                                                        <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center mb-10" for="kt_create_account_form_account_type_corporate">
                                                             <!--begin::Svg Icon | path: icons/duotune/finance/fin006.svg-->
                                                             <span class="svg-icon svg-icon-3x me-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path opacity="0.3" d="M20 15H4C2.9 15 2 14.1 2 13V7C2 6.4 2.4 6 3 6H21C21.6 6 22 6.4 22 7V13C22 14.1 21.1 15 20 15ZM13 12H11C10.5 12 10 12.4 10 13V16C10 16.5 10.4 17 11 17H13C13.6 17 14 16.6 14 16V13C14 12.4 13.6 12 13 12Z" fill="currentColor"></path>
@@ -1774,7 +1914,7 @@ License: For each use you must have a valid license purchased only from above li
                                                     <div class="col-lg-4" id="main3">
                                                         <!--begin::Option-->
                                                         <input type="radio" class="btn-check" name="account_type" value="corporate" id="kt_create_account_form_account_type_corporate">
-                                                        <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center" for="kt_create_account_form_account_type_corporate">
+                                                        <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center mb-10" for="kt_create_account_form_account_type_corporate">
                                                             <!--begin::Svg Icon | path: icons/duotune/finance/fin006.svg-->
                                                             <span class="svg-icon svg-icon-3x me-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path opacity="0.3" d="M20 15H4C2.9 15 2 14.1 2 13V7C2 6.4 2.4 6 3 6H21C21.6 6 22 6.4 22 7V13C22 14.1 21.1 15 20 15ZM13 12H11C10.5 12 10 12.4 10 13V16C10 16.5 10.4 17 11 17H13C13.6 17 14 16.6 14 16V13C14 12.4 13.6 12 13 12Z" fill="currentColor"></path>
@@ -2080,14 +2220,11 @@ License: For each use you must have a valid license purchased only from above li
                                                         <!--begin::Info-->
                                                         <div class="d-flex flex-center flex-wrap">
                                                             <!--begin::Stats-->
-
-
-
                                                             <ul class="nav nav-pills nav-pills-custom mb-3" role="tablist" id="sub_ul1">
                                                                 <!--begin::Item-->
-                                                                <div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1" style="padding: 10px;" >
+                                                                <div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1">
                                                                     <!--begin::Col-->
-                                                                    <div class="col-md-12">
+                                                                    <div class="col-md-6">
                                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
                                                                             <!--begin::Radio button-->
                                                                             <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
@@ -2104,14 +2241,7 @@ License: For each use you must have a valid license purchased only from above li
 
                                                                     </div>
                                                                     <!--end::Col-->
-
-
-                                                                </div>
-                                                                <!--end::Item-->
-                                                                <!--begin::Item-->
-                                                                <div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1" style="padding: 10px;" id="sub_sub2">
-                                                                    <!--begin::Col-->
-                                                                    <div class="col-md-12">
+                                                                    <div class="col-md-6">
                                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
                                                                             <!--begin::Radio button-->
                                                                             <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
@@ -2126,97 +2256,64 @@ License: For each use you must have a valid license purchased only from above li
                                                                             </span>
                                                                         </label>
                                                                     </div>
-                                                                    <!--end::Col-->
-
-
-                                                                </div>
-
-                                                                <!--begin::Item-->
-                                                                <div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1" style="padding: 10px;" id="sub_sub1">
-                                                                    <!--begin::Col-->
-                                                                    <div class="col-md-12">
+                                                                                                                                        <!--begin::Col-->
+                                                                                                                                        <div class="col-md-6">
+                                                                                                                                            <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
+                                                                                                                                                <!--begin::Radio button-->
+                                                                                                                                                <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
+                                                                                                                                                    <input class="form-check-input" type="checkbox" name="usage" value="1"  id="cats1" >
+                                                                                                                                                </span>
+                                                                                                                                                <!--end::Radio button-->
+                                                                    
+                                                                                                                                                <span class="ms-5">
+                                                                                                                                                    <span class="fs-4 fw-bold mb-1 d-block">Advertising</span>
+                                                                                                                                                </span>
+                                                                                                                                            </label>
+                                                                                                                                        </div>
+                                                                                                                                        <!--end::Col-->
+                                                                                                                                                                                                            <!--begin::Col-->
+                                                                    <div class="col-md-6">
                                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
                                                                             <!--begin::Radio button-->
                                                                             <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                             <input class="form-check-input" type="checkbox" name="usage" value="1"  id="cats1" >
-                                                                              </span>
-                                                                            <!--end::Radio button-->
-
-                                                                            <span class="ms-5">
-                                                                               <span class="fs-4 fw-bold mb-1 d-block">Advertising</span>
-
+                                                                                <input class="form-check-input" type="checkbox" name="usage" value="1" id="cats3" >
                                                                             </span>
-
-                                                                        </label>
-
-                                                                    </div>
-                                                                    <!--end::Col-->
-
-
-                                                                 </div>
-                                                                <!--end::Item-->
-                                                                <!--begin::Item-->
-                                                                <!--end::Item-->
-                                                                <!--begin::Item-->
-                                                                <div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1" style="padding: 10px;" id="sub_sub3">
-                                                                    <!--begin::Col-->
-                                                                    <div class="col-md-12">
-                                                                        <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
-                                                                            <!--begin::Radio button-->
-                                                                            <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                             <input class="form-check-input" type="checkbox" name="usage" value="1" id="cats3" >
-                                                                              </span>
                                                                             <!--end::Radio button-->
 
                                                                             <span class="ms-5">
-                                                                               <span class="fs-4 fw-bold mb-1 d-block">Creative Agency Activities</span>
-
-
+                                                                            <span class="fs-4 fw-bold mb-1 d-block">Creative Agency Activities</span>
                                                                             </span>
                                                                         </label>
                                                                     </div>
                                                                     <!--end::Col-->
 
-
+                                                                                                                                        <!--begin::Col-->
+                                                                                                                                        <div class="col-md-6">
+                                                                                                                                            <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
+                                                                                                                                                <!--begin::Radio button-->
+                                                                                                                                                <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
+                                                                                                                                                 <input class="form-check-input" type="checkbox" name="usage" value="1" id="cats4" >
+                                                                                                                                                  </span>
+                                                                                                                                                <!--end::Radio button-->
+                                                                    
+                                                                                                                                                <span class="ms-5">
+                                                                                                                                                   <span class="fs-4 fw-bold mb-1 d-block">Photographic activities</span>
+                                                                    
+                                                                    
+                                                                    
+                                                                                                                                                </span>
+                                                                                                                                            </label>
+                                                                                                                                        </div>
+                                                                                                                                        <!--end::Col-->
                                                                 </div>
                                                                 <!--end::Item-->
-                                                                <!--begin::Item-->
-                                                                <div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1" style="padding: 10px;" id="sub_sub4">
-                                                                    <!--begin::Col-->
-                                                                    <div class="col-md-12">
-                                                                        <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
-                                                                            <!--begin::Radio button-->
-                                                                            <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                             <input class="form-check-input" type="checkbox" name="usage" value="1" id="cats4" >
-                                                                              </span>
-                                                                            <!--end::Radio button-->
-
-                                                                            <span class="ms-5">
-                                                                               <span class="fs-4 fw-bold mb-1 d-block">Photographic activities</span>
-
-
-
-                                                                            </span>
-                                                                        </label>
-                                                                    </div>
-                                                                    <!--end::Col-->
-
-
-                                                                </div>
-                                                                <!--end::Item-->
-                                                                <!--begin::Item-->
-                                                                <!--end::Item-->
-                                                                <!--begin::Item-->
-                                                                <!--end::Item-->
-
-
 
                                                             </ul>
                                                             <ul class="nav nav-pills nav-pills-custom mb-3" role="tablist" id="sub_ul2">
                                                                 <!--begin::Item-->
                                                                 <div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1" style="padding: 10px;" >
                                                                     <!--begin::Col-->
-                                                                    <div class="col-md-12">
+                                                                    <div class="col-md-4">
                                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
                                                                             <!--begin::Radio button-->
                                                                             <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
@@ -2233,14 +2330,8 @@ License: For each use you must have a valid license purchased only from above li
 
                                                                     </div>
                                                                     <!--end::Col-->
-
-
-                                                                </div>
-                                                                <!--end::Item-->
-                                                                <!--begin::Item-->
-                                                                <div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1" style="padding: 10px;" id="sub_sub5">
                                                                     <!--begin::Col-->
-                                                                    <div class="col-md-12">
+                                                                    <div class="col-md-4">
                                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
                                                                             <!--begin::Radio button-->
                                                                             <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
@@ -2255,14 +2346,8 @@ License: For each use you must have a valid license purchased only from above li
                                                                         </label>
                                                                     </div>
                                                                     <!--end::Col-->
-
-
-                                                                 </div>
-                                                                <!--end::Item-->
-                                                                <!--begin::Item-->
-                                                                <div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1" style="padding: 10px;" id="sub_sub6">
                                                                     <!--begin::Col-->
-                                                                    <div class="col-md-12">
+                                                                    <div class="col-md-4">
                                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
                                                                             <!--begin::Radio button-->
                                                                             <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
@@ -2278,38 +2363,26 @@ License: For each use you must have a valid license purchased only from above li
                                                                         </label>
                                                                     </div>
                                                                     <!--end::Col-->
-
-
-                                                                </div>
-                                                                <!--end::Item-->
-                                                                <!--begin::Item-->
-                                                                <div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1" style="padding: 10px;" id="sub_sub7">
-                                                                    <!--begin::Col-->
-                                                                    <div class="col-md-12">
-                                                                        <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
-                                                                            <!--begin::Radio button-->
-                                                                            <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                             <input class="form-check-input" type="checkbox" name="usage" value="1" id="cats7"  >
-                                                                              </span>
-                                                                            <!--end::Radio button-->
-
-                                                                            <span class="ms-5">
-                                                                               <span class="fs-4 fw-bold mb-1 d-block">trading</span>
-
-
-
-                                                                            </span>
-                                                                        </label>
-                                                                    </div>
-                                                                    <!--end::Col-->
-
-
-                                                                </div>
-                                                                <!--end::Item-->
-                                                                <!--begin::Item-->
-                                                                <div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1" style="padding: 10px;" id="sub_sub8">
-                                                                    <!--begin::Col-->
-                                                                    <div class="col-md-12">
+                                                                                                                                        <!--begin::Col-->
+                                                                                                                                        <div class="col-md-4">
+                                                                                                                                            <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
+                                                                                                                                                <!--begin::Radio button-->
+                                                                                                                                                <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
+                                                                                                                                                 <input class="form-check-input" type="checkbox" name="usage" value="1" id="cats7"  >
+                                                                                                                                                  </span>
+                                                                                                                                                <!--end::Radio button-->
+                                                                    
+                                                                                                                                                <span class="ms-5">
+                                                                                                                                                   <span class="fs-4 fw-bold mb-1 d-block">trading</span>
+                                                                    
+                                                                    
+                                                                    
+                                                                                                                                                </span>
+                                                                                                                                            </label>
+                                                                                                                                        </div>
+                                                                                                                                        <!--end::Col-->
+                                                                                                                                                                                                            <!--begin::Col-->
+                                                                    <div class="col-md-4">
                                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
                                                                             <!--begin::Radio button-->
                                                                             <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
@@ -2325,19 +2398,8 @@ License: For each use you must have a valid license purchased only from above li
                                                                         </label>
                                                                     </div>
                                                                     <!--end::Col-->
-
-
                                                                 </div>
                                                                 <!--end::Item-->
-                                                                <!--begin::Item-->
-
-
-
-                                                                <!--end::Item-->
-                                                                <!--begin::Item-->
-
-
-
 
 
                                                             </ul>
@@ -2369,7 +2431,7 @@ License: For each use you must have a valid license purchased only from above li
                                                                 <!--begin::Item-->
                                                                 <div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1" style="padding: 10px;" id="sub_sub9">
                                                                     <!--begin::Col-->
-                                                                    <div class="col-md-12">
+                                                                    <div class="col-md-3">
                                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
                                                                             <!--begin::Radio button-->
                                                                             <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
@@ -2384,14 +2446,8 @@ License: For each use you must have a valid license purchased only from above li
                                                                         </label>
                                                                     </div>
                                                                     <!--end::Col-->
-
-
-                                                                 </div>
-                                                                <!--end::Item-->
-                                                                <!--begin::Item-->
-                                                                <div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1" style="padding: 10px;" id="sub_sub10">
                                                                     <!--begin::Col-->
-                                                                    <div class="col-md-12">
+                                                                    <div class="col-md-3">
                                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
                                                                             <!--begin::Radio button-->
                                                                             <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
@@ -2410,14 +2466,8 @@ License: For each use you must have a valid license purchased only from above li
                                                                         </label>
                                                                     </div>
                                                                     <!--end::Col-->
-
-
-                                                                </div>
-                                                                <!--end::Item-->
-                                                                <!--begin::Item-->
-                                                                <div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1" style="padding: 10px;" id="sub_sub11">
                                                                     <!--begin::Col-->
-                                                                    <div class="col-md-12">
+                                                                    <div class="col-md-3">
                                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true" >
                                                                             <!--begin::Radio button-->
                                                                             <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
@@ -2433,40 +2483,28 @@ License: For each use you must have a valid license purchased only from above li
                                                                         </label>
                                                                     </div>
                                                                     <!--end::Col-->
-
-
+                                                                                                                                        <!--begin::Col-->
+                                                                                                                                        <div class="col-md-3">
+                                                                                                                                            <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
+                                                                                                                                                <!--begin::Radio button-->
+                                                                                                                                                <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
+                                                                                                                                                 <input class="form-check-input" type="checkbox" name="usage" value="1" id="cats12"  >
+                                                                                                                                                  </span>
+                                                                                                                                                <!--end::Radio button-->
+                                                                    
+                                                                                                                                                <span class="ms-5">
+                                                                                                                                                   <span class="fs-4 fw-bold mb-1 d-block">APIs</span>
+                                                                    
+                                                                    </svg></span>
+                                                                                                                                                                                                                                        <!--end::Svg Icon-->                            </button>
+                                                                    
+                                                                    
+                                                                                                                                                </span>
+                                                                                                                                            </label>
+                                                                                                                                        </div>
+                                                                                                                                        <!--end::Col-->
                                                                 </div>
                                                                 <!--end::Item-->
-                                                                <!--begin::Item-->
-                                                                <div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1" style="padding: 10px;"  id="sub_sub12">
-                                                                    <!--begin::Col-->
-                                                                    <div class="col-md-12">
-                                                                        <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
-                                                                            <!--begin::Radio button-->
-                                                                            <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                             <input class="form-check-input" type="checkbox" name="usage" value="1" id="cats12"  >
-                                                                              </span>
-                                                                            <!--end::Radio button-->
-
-                                                                            <span class="ms-5">
-                                                                               <span class="fs-4 fw-bold mb-1 d-block">APIs</span>
-
-</svg></span>
-                                                                                                                                                                    <!--end::Svg Icon-->                            </button>
-
-
-                                                                            </span>
-                                                                        </label>
-                                                                    </div>
-                                                                    <!--end::Col-->
-
-
-                                                                </div>
-                                                                <!--end::Item-->
-
-
-
-
 
                                                             </ul>
 
@@ -2866,7 +2904,7 @@ License: For each use you must have a valid license purchased only from above li
                                         <!--begin::Step 4-->
                                         <div   data-kt-stepper-element="content">
                                             <!--begin::Wrapper-->
-                                            <div class="w-100" >
+                                            <div class="w-100" style="width: 100%;">
                                                 <!--begin::Heading-->
                                                 <div>
 
@@ -2894,19 +2932,19 @@ License: For each use you must have a valid license purchased only from above li
                                                     <div class="col-md-12 fv-row">
                                                         <div class="row fv-row">
                                                             <!--begin::Col-->
-                                                            <div class="col-4">
+                                                            <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
                                                                 <input type="text" class="form-control form-control-lg" name="amount_shares" id="amount_capital" placeholder="Amount of Capital" value="100000"/>
                                                                 <div class="fs-7" style="padding-top: 10px;">Total Capital</div>
                                                             </div>
                                                             <!--end::Col-->
 
                                                             <!--begin::Col-->
-                                                            <div class="col-4">
+                                                            <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
                                                                 <input type="text" class="form-control form-control-lg" id="number_shares" name="Number shares" placeholder="Number Shares" value="100"/>
                                                                 <div class="fs-7" style="padding-top: 10px;">Number of Shares</div>
                                                             </div>
 
-                                                            <div class="col-4">
+                                                            <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
                                                                 <!--begin::Input-->
                                                                 <input type="text" class="form-control form-control-lg" name="amount_shares" id="amount_shares" placeholder="Amount of share" value="100" disabled/>
                                                                 <div class="fs-7" style="padding-top: 10px;">Value Per share.</div>
@@ -2980,14 +3018,6 @@ License: For each use you must have a valid license purchased only from above li
                                                                                 <!--end::Radio-->
                                                                                 <!--begin::Radio-->
                                                                                 <div class="form-check form-check-custom form-check-solid">
-                                                                                    <label class="form-check-label" >
-
-
-                                                                                    </label>
-                                                                                </div>
-                                                                                <!--end::Radio-->
-                                                                                <!--begin::Radio-->
-                                                                                <div class="form-check form-check-custom form-check-solid">
                                                                                     <input class="form-check-input" type="checkbox" name="conditions" value="" id="Shareholders">
                                                                                     <label class="form-check-label" for="Shareholders">
                                                                                         Shareholders
@@ -2997,7 +3027,7 @@ License: For each use you must have a valid license purchased only from above li
                                                                                 <!--end::Radio-->
                                                                             </div>
 
-                                                                            <div class="row">
+                                                                            <div class="row foreign_only" style="display:none">
                                                                                 <div class="d-flex align-items-center">
                                                                                     <div class="col-lg-5">
                                                                                         <label class="me-5 form-label">Passport Image</label>
@@ -3010,6 +3040,7 @@ License: For each use you must have a valid license purchased only from above li
                                                                             <div class="row">
                                                                                 <!--begin::Select2-->
                                                                                 <div class="col-lg-3">
+                                                                                    <label class="form-label">Type</label>
                                                                                     <select class="form-select" id="individual_body" name="Authorised_Signatory" data-placeholder="Select a variation" data-kt-ecommerce-catalog-add-product="product_option">
                                                                                         <option value="resident">resident</option>
                                                                                         <option value="citizen">citizen</option>
@@ -3017,69 +3048,78 @@ License: For each use you must have a valid license purchased only from above li
                                                                                         <option value="corporate">corporate</option>
                                                                                     </select>
                                                                                 </div>
-                                                                                <!--                                                                            <div class="d-flex align-items-center justify-content-end">-->
-                                                                                <!--                                                                                &lt;!&ndash;begin:: Avatar &ndash;&gt;-->
-                                                                                <!--                                                                                <div class="symbol symbol-circle symbol-25px overflow-hidden me-3">-->
-                                                                                <!--                                                                                    <a href="../customers/details.html" data-bs-toggle="modal"  data-bs-target="#kt_modal_add_schedule">-->
-                                                                                <!--                                                                                        <div class="symbol-label">-->
-                                                                                <!--                                                                                            <img src="assets/media/avatars/aue.png" alt="Dan Wilson" class="w-100">-->
-                                                                                <!--                                                                                        </div>-->
-                                                                                <!--                                                                                    </a>-->
-                                                                                <!--                                                                                </div>-->
-                                                                                <!--                                                                                &lt;!&ndash;end::Avatar&ndash;&gt;-->
-    
-    
-                                                                                <!--                                                                            </div>-->
-    
-    
-                                                                                <!--end::Select2-->
     
                                                                                 <!--begin::Input-->
                                                                                 <div class="col-lg-3 mb-2 form-group" id="aue_form">
+                                                                                    <label class="form-label">UAE Number</label>
                                                                                     <input type="text" class="form-control  Pass_Number" name="product_option_value" placeholder="UAE" id="aue_number" />
-                                                                                    <a id="aue"  style="position: absolute; top: 10px; right: 13px;" >
+                                                                                    <a id="aue"  style="position: absolute; top: 40px; right: 13px;" >
                                                                                         <img src="assets/media/avatars/aue.png" class="w-50px " alt="">
                                                                                     </a>
                                                                                 </div>
                                                                                 <div class="col-lg-3 mb-2">
-                                                                                    <input type="text" class="form-control individual_authorised" name="product_option_value" placeholder="First Name En" id="first_name" />
+                                                                                    <label class="form-label">First Name En</label>
+                                                                                    <input type="text" class="form-control individual_authorised" name="product_option_value" placeholder="" id="first_name" />
                                                                                 </div>
                                                                                 <div class="col-lg-3 mb-2">
-                                                                                    <input type="text" class="form-control individual_authorised" name="product_option_value" placeholder="Last Name En" id="last_name" />
+                                                                                    <label class="form-label">Last Name En</label>
+                                                                                    <input type="text" class="form-control individual_authorised" name="product_option_value" placeholder="" id="last_name" />
                                                                                 </div>
                                                                                 <div class="col-lg-3 mb-2">
-                                                                                    <input type="text" class="form-control individual_authorised" name="product_option_value" placeholder="Nationality" id="nationality" />
+                                                                                    <label class="form-label">First Name Ar</label>
+                                                                                    <input type="text" class="form-control individual_authorised" name="product_option_value" placeholder="" id="first_name" />
+                                                                                </div>
+                                                                                <div class="col-lg-3 mb-2">
+                                                                                    <label class="form-label">Last Name Ar</label>
+                                                                                    <input type="text" class="form-control individual_authorised" name="product_option_value" placeholder="" id="last_name" />
+                                                                                </div>
+                                                                                <div class="col-lg-3 mb-2">
+                                                                                    <label class="form-label">Nationality</label>
+                                                                                    <input type="text" class="form-control individual_authorised" name="product_option_value" placeholder="" id="nationality" />
                                                                                 </div>
                                                                                 <div class="col-lg-3 mb-2" >
-                                                                                    <input type="text" class="form-control individual_authorised" name="product_option_value" placeholder="address" id="address" />
+                                                                                    <label class="form-label">Address</label>
+                                                                                    <input type="text" class="form-control individual_authorised" name="product_option_value" placeholder="" id="address" />
                                                                                 </div>
-                                                                                <div class="col-lg-3" >
-                                                                                    <input type="text" class="form-control" name="product_option_value" placeholder="phone" id="phone" />
+                                                                                <div class="col-lg-3 mb-2">
+                                                                                    <label class="form-label">Phone</label>
+                                                                                    <input type="text" class="form-control" name="product_option_value" placeholder="" id="phone" />
                                                                                 </div>
-                                                                                <div class="col-lg-3 mb-2 foreign_only" style="display:none">
+                                                                                <div class="col-lg-3 mb-2 custom_hide">
+                                                                                    <label class="form-label">Gender</label>
                                                                                     <select class="form-select gender">
-                                                                                        <option value="" selected>Gender</option>
+                                                                                        <option value="" selected>Select Gender</option>
                                                                                         <option value="1">Male</option>
                                                                                         <option value="2">Female</option>
                                                                                     </select>
                                                                                 </div>
-                                                                                <div class="col-lg-3 foreign_only" style="display:none">
-                                                                                    <label>BOD</label>
+                                                                                <div class="col-lg-3 mb-2 custom_hide">
+                                                                                    <label class="form-label">BOD</label>
                                                                                     <input type="date" id="dateInput" class="form-control" placeholder="Date of Birth"  />
                                                                                 </div>
-                                                                                <div class="col-lg-3 foreign_only" style="display:none">
-                                                                                    <label>Date Issued Passport</label>
+                                                                                <div class="col-lg-3 mb-2 custom_hide">
+                                                                                    <label class="form-label">Date Issued Passport</label>
                                                                                     <input type="date" class="form-control dateInput2" placeholder=""  />
                                                                                 </div>
-                                                                                <div class="col-lg-3 foreign_only" style="display:none">
-                                                                                    <label>Date Expired Passport</label>
+                                                                                <div class="col-lg-3 mb-2 custom_hide">
+                                                                                    <label class="form-label">Date Expired Passport</label>
                                                                                     <input type="date" class="form-control dateInput2" placeholder=""  />
                                                                                 </div>
-                                                                                <div class="col-lg-3 mb-2" >
-                                                                                    <input type="text" class="form-control " name="product_option_value" placeholder="share number"  id="share_number" />
+                                                                                <div class="col-lg-3 mb-2 corporate_only" style="display:none">
+                                                                                    <label class="form-label">Date Issued License</label>
+                                                                                    <input type="date" class="form-control dateInput2" placeholder=""  />
                                                                                 </div>
-                                                                                <div class="col-lg-3 mb-2" >
-                                                                                    <input type="text" class="form-control " name="product_option_value" placeholder="share percentage"  id="share_per" />
+                                                                                <div class="col-lg-3 mb-2 corporate_only" style="display:none">
+                                                                                    <label class="form-label">Date Issued License</label>
+                                                                                    <input type="date" class="form-control dateInput2" placeholder=""  />
+                                                                                </div>
+                                                                                <div class="col-lg-3 mb-2 share_data" >
+                                                                                    <label class="form-label">Share Number</label>
+                                                                                    <input type="text" class="form-control " name="product_option_value" placeholder=""  id="share_number" />
+                                                                                </div>
+                                                                                <div class="col-lg-3 mb-2 share_data" >
+                                                                                    <label class="form-label">Share Percentage</label>
+                                                                                    <input type="text" class="form-control " name="product_option_value" placeholder=""  id="share_per" />
                                                                                 </div>
 
                                                                                 <!--end::Input-->
@@ -3129,43 +3169,28 @@ License: For each use you must have a valid license purchased only from above li
                                                         <!--begin::Card body-->
                                                         <div class="card-body pt-0 pb-5" style="padding: 0px 0px 0px 0px">
                                                             <!--begin::Table-->
-                                                            <div id="kt_table_customers_payment_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="table-responsive"><table class="table text-center align-middle table-row-dashed gy-5 dataTable no-footer" id="kt_table_customers_payment">
-                                                                <!--begin::Table head-->
-                                                                <thead class="border-bottom border-gray-200 fs-7 fw-bold">
-                                                                <!--begin::Table row-->
-                                                                <tr class="text-start text-muted text-uppercase gs-0">
-                                                                    <th class="sorting" tabindex="0" aria-controls="kt_table_customers_payment" rowspan="1" colspan="1" aria-label="order No.: activate to sort column ascending" >type citizen</th>
-                                                                    <th class="sorting" tabindex="0" aria-controls="kt_table_customers_payment" rowspan="1" colspan="1" aria-label="Rewards: activate to sort column ascending" >F.Name</th>
-                                                                    <th class="sorting" tabindex="0" aria-controls="kt_table_customers_payment" rowspan="1" colspan="1" aria-label="Rewards: activate to sort column ascending" >L.Name</th>
-                                                                    <th class="sorting" tabindex="0" aria-controls="kt_table_customers_payment" rowspan="1" colspan="1" aria-label="Rewards: activate to sort column ascending" >nationality</th>
-                                                                    <th class="sorting" tabindex="0" aria-controls="kt_table_customers_payment" rowspan="1" colspan="1" aria-label="Rewards: activate to sort column ascending" >Address</th>
-                                                                    <th class="sorting" tabindex="0" aria-controls="kt_table_customers_payment" rowspan="1" colspan="1" aria-label="Rewards: activate to sort column ascending" >phone</th>
-                                                                    <th class="sorting" tabindex="0" aria-controls="kt_table_customers_payment" rowspan="1" colspan="1" aria-label="Rewards: activate to sort column ascending" >Gender</th>
-                                                                    <th class="min-w-60px sorting" tabindex="0" aria-controls="kt_table_customers_payment" rowspan="1" colspan="1" aria-label="Rewards: activate to sort column ascending" >DOB</th>
-                                                                    <th class="sorting" tabindex="0" aria-controls="kt_table_customers_payment" rowspan="1" colspan="1" aria-label="Rewards: activate to sort column ascending" >share Number</th>
-                                                                    <th class="min-w-70px sorting" tabindex="0" aria-controls="kt_table_customers_payment" rowspan="1" colspan="1" aria-label="Rewards: activate to sort column ascending" >Type</th>
-                                                                    <th class="sorting" tabindex="0" aria-controls="kt_table_customers_payment" rowspan="1" colspan="1" aria-label="order No.: activate to sort column ascending" >delet</th>
-                                                                </tr>
-                                                                <!--end::Table row-->
-                                                                </thead>
-                                                                <!--end::Table head-->
+                                                            <div class="table-responsive">
+                                                                <table class="table table-row-dashed table-row-gray-300">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Type citizen</th>
+                                                                            <th>F.Name</th>
+                                                                            <th>L.Name</th>
+                                                                            <th>Nationality</th>
+                                                                            <th>Address</th>
+                                                                            <th>Phone</th>
+                                                                            <th>Gender</th>
+                                                                            <th>DOB</th>
+                                                                            <th>Share Number</th>
+                                                                            <th>Type</th>
+                                                                            <th>Delete</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody id="list_persons">
 
-                                                                <!--begin::Table body-->
-                                                                <tbody class="fs-6 fw-semibold text-gray-600" id="list_persons">
-                                                                <!--begin::Table row-->
-
-
-
-
-                                                                <!--end::Table row-->
-
-
-
-                                                                </tbody>
-                                                                <!--end::Table body-->
-                                                            </table></div><div class="row">
-                                                                <div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start"></div><div class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end">
-                                                            </div></div></div>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
                                                             <!--end::Table-->
                                                         </div>
                                                         <!--end::Card body-->
@@ -3180,6 +3205,470 @@ License: For each use you must have a valid license purchased only from above li
                                         </div>
                                         <!--end::Step 4-->
                                         <!--begin::Step 5-->
+                                        <div data-kt-stepper-element="content">
+                                            <!--begin::Wrapper-->
+                                            <div class="w-100 full">
+                                                <div class="pb-10 pb-lg-15">
+                                                    <!--begin::Title-->
+                                                    <h2 class="fw-bold d-flex align-items-center text-dark">
+                                                        License Details
+                                                        <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="License Details"></i>
+                                                    </h2>
+                                                    <!--end::Title-->
+
+                                                    <!--begin::Notice-->
+                                                    <div class="text-muted fw-semibold fs-6">
+                                                        If you need more info, please check out
+                                                        <a href="#" class="link-primary fw-bold">Help Page</a>.
+                                                    </div>
+                                                    <!--end::Notice-->
+                                                </div>
+
+                                                <div class="row mb-10">
+                                                    <!--begin::Col-->
+                                                    <div class="col-lg-12 fv-row">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 mb-5">
+                                                                <!--begin::Input group-->
+                                                                <div class="form-floating">
+                                                                    <input type="email" class="form-control" id="floatingInputValue" placeholder="Ex:5" value="5"/>
+                                                                    <label for="floatingInputValue">Director Tenure</label>
+                                                                </div>
+                                                                <!--end::Input group-->
+                                                            </div>
+                                                            <div class="col-lg-6 mb-5">
+                                                                <!--begin::Input group-->
+                                                                <div class="form-floating">
+                                                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                                        <option value="1">Sharjah Court</option>
+                                                                        <option value="2">Sharjah International Arbitration Centre</option>
+                                                                    </select>
+                                                                    <label for="floatingSelect">Dispute Settlement Authority</label>
+                                                                </div>
+                                                                <!--end::Input group-->
+                                                            </div>
+                                                            <div class="col-lg-6 mb-5">
+                                                                <!--begin::Input group-->
+                                                                <div class="form-floating">
+                                                                    <input type="email" class="form-control" id="floatingInputValue" placeholder="Ex:75%" value="75"/>
+                                                                    <label for="floatingInputValue">Required Quorum For The General Assembly To Take Decision</label>
+                                                                </div>
+                                                                <!--end::Input group-->
+                                                            </div>
+                                                            <div class="col-lg-6 mb-5">
+                                                                <!--begin::Input group-->
+                                                                <div class="form-floating">
+                                                                    <input type="email" class="form-control" id="floatingInputValue" placeholder="Ex:75%" value="75"/>
+                                                                    <label for="floatingInputValue">Required Quorum For The General Assembly To Dismiss the Director</label>
+                                                                </div>
+                                                                <!--end::Input group-->
+                                                            </div>
+                                                            <div class="col-lg-6 mb-5">
+                                                                <!--begin::Input group-->
+                                                                <div class="form-floating">
+                                                                    <input type="email" class="form-control" id="floatingInputValue" placeholder="Ex:75%" value="75"/>
+                                                                    <label for="floatingInputValue">Required Quorum For The General Assembly To Modify MOA</label>
+                                                                </div>
+                                                                <!--end::Input group-->
+                                                            </div>
+                                                            <div class="col-lg-6 mb-5">
+                                                                <!--begin::Input group-->
+                                                                <div class="form-floating">
+                                                                    <input type="email" class="form-control" id="floatingInputValue" placeholder="Ex:75%" value="75"/>
+                                                                    <label for="floatingInputValue">Required Quorum For The General Assembly To Dissolve</label>
+                                                                </div>
+                                                                <!--end::Input group-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--end::Col-->
+                                                </div>
+
+                                            </div>
+
+                                            <!--end::Wrapper-->
+                                        </div>
+                                        <!--end::Step 5-->
+                                        <!--begin::Step 6-->
+                                        <div data-kt-stepper-element="content">
+                                            <!--begin::Wrapper-->
+                                            <div class="w-100 full">
+                                                <div class="pb-10 pb-lg-15">
+                                                    <!--begin::Title-->
+                                                    <h2 class="fw-bold d-flex align-items-center text-dark">
+                                                        Manager Authorities
+                                                        <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Manager Authorities"></i>
+                                                    </h2>
+                                                    <!--end::Title-->
+
+                                                    <!--begin::Notice-->
+                                                    <div class="text-muted fw-semibold fs-6">
+                                                        If you need more info, please check out
+                                                        <a href="#" class="link-primary fw-bold">Help Page</a>.
+                                                    </div>
+                                                    <!--end::Notice-->
+                                                </div>
+
+                                                <div class="row mb-10">
+                                                    <!--begin::Col-->
+                                                    <div class="col-lg-12 fv-row" id="sub2">
+                                                        <!--begin::Row-->
+                                                        <div class="row g-4" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1">
+                                                            <!--begin::Col-->
+                                                            <div class="col-md-12 col-lg-12 col-xxl-12">
+                                                                <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-4" data-kt-button="true">
+                                                                    <span class="form-check form-check-custom form-check-solid form-check-sm">
+                                                                        <input class="form-check-input sub_cat" type="checkbox" name="usage" value="1">
+                                                                    </span>
+                                                                    <span class="ms-5">
+                                                                        <span class="fs-6 fw-semibold d-block">1. To represent the Company before the Government Departments, including the Department of Economic Development, Municipalities, Etisalat, Du, Electricity and Water Authorities, Land Department, Chambers of Commerce and Industry, Ministry of Human Resources and Emiratization, General Directorate of Residency and Foreigners Affairs, Traffic Department, Road and Transport Authority, Police, Courts, Postal, Airports, Ports, Seaports, Customs, Public Persecution, and all other semi-official Government Departments, ministries and institutions, and to sign all documents, papers and contracts with or before the abovementioned authorities.</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <!--end::Col-->
+                                                            <!--begin::Col-->
+                                                            <div class="col-md-12 col-lg-12 col-xxl-12">
+                                                                <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-4" data-kt-button="true">
+                                                                    <span class="form-check form-check-custom form-check-solid form-check-sm">
+                                                                        <input class="form-check-input sub_cat" type="checkbox" name="usage" value="2">
+                                                                    </span>
+                                                                    <span class="ms-5">
+                                                                        <span class="fs-6 fw-semibold d-block">2. To appoint and remove lawyers and to file or defend any suits before all UAE courts at all levels.</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <!--end::Col-->
+                                                            <!--begin::Col-->
+                                                            <div class="col-md-12 col-lg-12 col-xxl-12">
+                                                                <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-4" data-kt-button="true">
+                                                                    <span class="form-check form-check-custom form-check-solid form-check-sm">
+                                                                        <input class="form-check-input sub_cat" type="checkbox" name="usage" value="3">
+                                                                    </span>
+                                                                    <span class="ms-5">
+                                                                        <span class="fs-6 fw-semibold d-block">3. To appoint and remove employees and consultants and fix their duties and remunerations.</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <!--end::Col-->
+                                                            <!--begin::Col-->
+                                                            <div class="col-md-12 col-lg-12 col-xxl-12">
+                                                                <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-4" data-kt-button="true">
+                                                                    <span class="form-check form-check-custom form-check-solid form-check-sm">
+                                                                        <input class="form-check-input sub_cat" type="checkbox" name="usage" value="4">
+                                                                    </span>
+                                                                    <span class="ms-5">
+                                                                        <span class="fs-6 fw-semibold d-block">4. To sign all tenders, contracts, documents on behalf of the company.</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <!--end::Col-->
+                                                            <!--begin::Col-->
+                                                            <div class="col-md-12 col-lg-12 col-xxl-12">
+                                                                <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-4" data-kt-button="true">
+                                                                    <span class="form-check form-check-custom form-check-solid form-check-sm">
+                                                                        <input class="form-check-input sub_cat" type="checkbox" name="usage" value="5">
+                                                                    </span>
+                                                                    <span class="ms-5">
+                                                                        <span class="fs-6 fw-semibold d-block">5. To authorize and sanction all vouchers of books of account and payment of all expenses.</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <!--end::Col-->
+                                                            <!--begin::Col-->
+                                                            <div class="col-md-12 col-lg-12 col-xxl-12">
+                                                                <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-4" data-kt-button="true">
+                                                                    <span class="form-check form-check-custom form-check-solid form-check-sm">
+                                                                        <input class="form-check-input sub_cat" type="checkbox" name="usage" value="6">
+                                                                    </span>
+                                                                    <span class="ms-5">
+                                                                        <span class="fs-6 fw-semibold d-block">6. The sale and purchase of cars and the registration and renewal of cars in the name of the establishment and the disposal of any car owned</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <!--end::Col-->
+                                                            <!--begin::Col-->
+                                                            <div class="col-md-12 col-lg-12 col-xxl-12">
+                                                                <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-4" data-kt-button="true">
+                                                                    <span class="form-check form-check-custom form-check-solid form-check-sm">
+                                                                        <input class="form-check-input sub_cat" type="checkbox" name="usage" value="7">
+                                                                    </span>
+                                                                    <span class="ms-5">
+                                                                        <span class="fs-6 fw-semibold d-block">7. To register the value added tax and to provide returns tothe Federal Tax Authority and to take, determine and apply the company's policy</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <!--end::Col-->
+                                                            <!--begin::Col-->
+                                                            <div class="col-md-12 col-lg-12 col-xxl-12">
+                                                                <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-4" data-kt-button="true">
+                                                                    <span class="form-check form-check-custom form-check-solid form-check-sm">
+                                                                        <input class="form-check-input sub_cat" type="checkbox" name="usage" value="8">
+                                                                    </span>
+                                                                    <span class="ms-5">
+                                                                        <span class="fs-6 fw-semibold d-block">8. Incorporation and representation of the company as a partner in the establishment of any company and signing the Memorandum of Association for establishing all types of new companies and contracts of the service agents in all Economic Departments or notary public or specialized authorities inside and outside the UAE.</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <!--end::Col-->
+                                                            <!--begin::Col-->
+                                                            <div class="col-md-12 col-lg-12 col-xxl-12">
+                                                                <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-4" data-kt-button="true">
+                                                                    <span class="form-check form-check-custom form-check-solid form-check-sm">
+                                                                        <input class="form-check-input sub_cat" type="checkbox" name="usage" value="9">
+                                                                    </span>
+                                                                    <span class="ms-5">
+                                                                        <span class="fs-6 fw-semibold d-block">9. The right to sell and/or assign any shares owned by the company in any other company, whether to sell it to third parties or to the company itself and receive the payment. He/she has the right to buy on behalf of the company any shares owned by other company, whether these shares are owned by the company itself or the property of third parties. The General Manager also has the right to increase and reduce the capital of the company and the companies in which the company is a shareholder which is applied in all Economic Departments or notary public or specialized authorities inside and outside the UAE.</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <!--end::Col-->
+                                                            <!--begin::Col-->
+                                                            <div class="col-md-12 col-lg-12 col-xxl-12">
+                                                                <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-4" data-kt-button="true">
+                                                                    <span class="form-check form-check-custom form-check-solid form-check-sm">
+                                                                        <input class="form-check-input sub_cat" type="checkbox" name="usage" value="10">
+                                                                    </span>
+                                                                    <span class="ms-5">
+                                                                        <span class="fs-6 fw-semibold d-block">10. The general manager has the right to resign from the company and the companies in which the company is a shareholder and to sign the procedures for the cancelation of the Trade License and the procedures of liquidation with various government departments including the notary public using the name of the company or any subsidiary company in all Economic Departments or notary public or specialized authorities inside and outside the UAE.</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <!--end::Col-->
+                                                            <!--begin::Col-->
+                                                            <div class="col-md-12 col-lg-12 col-xxl-12">
+                                                                <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-4" data-kt-button="true">
+                                                                    <span class="form-check form-check-custom form-check-solid form-check-sm">
+                                                                        <input class="form-check-input sub_cat" type="checkbox" name="usage" value="11">
+                                                                    </span>
+                                                                    <span class="ms-5">
+                                                                        <span class="fs-6 fw-semibold d-block">11. To transfer the salaries of workers and employees to the banks</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <!--end::Col-->
+                                                            <!--begin::Col-->
+                                                            <div class="col-md-12 col-lg-12 col-xxl-12">
+                                                                <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-4" data-kt-button="true">
+                                                                    <span class="form-check form-check-custom form-check-solid form-check-sm">
+                                                                        <input class="form-check-input sub_cat" type="checkbox" name="usage" value="12">
+                                                                    </span>
+                                                                    <span class="ms-5">
+                                                                        <span class="fs-6 fw-semibold d-block">12. The appointment of the manager / managers shall be for a period of five / years starting from the date the company is registered in the commercial register, automatically renewable for similar periods unless agreed otherwise. It is allowed to reappoint the manager / managers whose term of appointment has expired and the managers are subject to dismissal according to the Commercial Companies Law or by a decision of the general assembly according to the aforementioned majority. The manager / managers shall have all the powers necessary to manage the company, sign on its behalf and carry out all the activities required for its purposes, and this authority shall not be limited except by the provisions of the law, this contract, or the general assembly decisions of the company</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <!--end::Col-->
+                                                            <!--begin::Col-->
+                                                            <div class="col-md-12 col-lg-12 col-xxl-12">
+                                                                <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-4" data-kt-button="true">
+                                                                    <span class="form-check form-check-custom form-check-solid form-check-sm">
+                                                                        <input class="form-check-input sub_cat" type="checkbox" name="usage" value="13">
+                                                                    </span>
+                                                                    <span class="ms-5">
+                                                                        <span class="fs-6 fw-semibold d-block">13. The Director)s( shall have all powers necessary to manage the company, and sign on its behalf and carry out all acts required by its objects. Such powers of the Director shall be restricted only as per the law, this Memorandum or the resolutions of the General Assembly of the Company</span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <!--end::Col-->
+
+                                                        </div>
+                                                        <!--end::Row-->
+                                                    </div>
+                                                    <!--end::Col-->
+                                                </div>
+
+                                            </div>
+
+                                            <!--end::Wrapper-->
+                                        </div>
+                                        <!--end::Step 6-->
+                                        <!--begin::Step 7-->
+                                        <div data-kt-stepper-element="content">
+                                            <!--begin::Wrapper-->
+                                            <div class="w-100 bank_authorities full">
+                                                <div class="pb-10 pb-lg-15">
+                                                    <!--begin::Title-->
+                                                    <h2 class="fw-bold d-flex align-items-center text-dark">
+                                                        Bank Authorities
+                                                        <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Bank Authorities"></i>
+                                                    </h2>
+                                                    <!--end::Title-->
+
+                                                    <!--begin::Notice-->
+                                                    <div class="text-muted fw-semibold fs-6">
+                                                        If you need more info, please check out
+                                                        <a href="#" class="link-primary fw-bold">Help Page</a>.
+                                                    </div>
+                                                    <!--end::Notice-->
+                                                </div>
+
+                                                <div class="row mb-10">
+                                                    <!--begin::Col-->
+                                                    <div class="col-md-12 col-lg-12 col-xxl-12 fv-row mb-8">
+                                                        <div class="btn btn-outline btn-outline-dashed d-flex flex-column text-start">
+                                                            <label data-kt-button="true">
+                                                                <span class="ms-5">
+                                                                    <span class="fs-4 fw-bold d-block">1. Authorized to open bank account</span>
+                                                                </span>
+                                                            </label>
+                                                            <div>
+                                                                <div class="row mt-8 mb-8">
+                                                                    <div class="col-lg-4 mb-3">
+                                                                        <div class="form-check form-check-custom form-check-solid form-check-sm me-3">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1"/>
+                                                                            <label class="form-check-label" for="flexCheckDefault1">
+                                                                                All
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-4 mb-3">
+                                                                        <div class="form-check form-check-custom form-check-solid form-check-sm me-3">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2"/>
+                                                                            <label class="form-check-label" for="flexCheckDefault2">
+                                                                                Islam Inshasi
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-4 mb-3">
+                                                                        <div class="form-check form-check-custom form-check-solid form-check-sm me-3">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3"/>
+                                                                            <label class="form-check-label" for="flexCheckDefault3">
+                                                                                Ahmed Hamouda
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <!--end::Col-->
+                                                    <!--begin::Col-->
+                                                    <div class="col-md-12 col-lg-12 col-xxl-12 fv-row mb-8">
+                                                        <div class="btn btn-outline btn-outline-dashed d-flex flex-column text-start">
+                                                            <label data-kt-button="true">
+                                                                <span class="ms-5">
+                                                                    <span class="fs-4 fw-bold d-block">2. Authorized to take bank loans</span>
+                                                                </span>
+                                                            </label>
+                                                            <div>
+                                                                <div class="row mt-8 mb-8">
+                                                                    <div class="col-lg-4 mb-3">
+                                                                        <div class="form-check form-check-custom form-check-solid form-check-sm me-3">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1"/>
+                                                                            <label class="form-check-label" for="flexCheckDefault1">
+                                                                                All
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-4 mb-3">
+                                                                        <div class="form-check form-check-custom form-check-solid form-check-sm me-3">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2"/>
+                                                                            <label class="form-check-label" for="flexCheckDefault2">
+                                                                                Islam Inshasi
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-4 mb-3">
+                                                                        <div class="form-check form-check-custom form-check-solid form-check-sm me-3">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3"/>
+                                                                            <label class="form-check-label" for="flexCheckDefault3">
+                                                                                Ahmed Hamouda
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <!--end::Col-->
+                                                </div>
+
+                                            </div>
+
+                                            <!--end::Wrapper-->
+                                        </div>
+                                        <!--end::Step 7-->
+                                        <!--begin::Step 8-->
+                                        <div data-kt-stepper-element="content">
+                                            <!--begin::Wrapper-->
+                                            <div class="w-100 full">
+                                                <div class="pb-10 pb-lg-15">
+                                                    <!--begin::Title-->
+                                                    <h2 class="fw-bold d-flex align-items-center text-dark">
+                                                        Ultimate Beneficiary Owners
+                                                        <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Ultimate Beneficiary Owners"></i>
+                                                    </h2>
+                                                    <!--end::Title-->
+
+                                                    <!--begin::Notice-->
+                                                    <div class="text-muted fw-semibold fs-6">
+                                                        If you need more info, please check out
+                                                        <a href="#" class="link-primary fw-bold">Help Page</a>.
+                                                    </div>
+                                                    <!--end::Notice-->
+                                                </div>
+
+                                                <div class="row mb-10">
+                                                    <!--begin::Col-->
+                                                    <div class="col-lg-12 fv-row">
+                                                        <!--begin::Col-->
+                                                        <div class="col-md-12 col-lg-12 col-xxl-12 fv-row mb-8">
+                                                            <p class="fs-5 fw-semibold">For the purpose of fulfilling the requirements of the Beneficial Owner (BO) information in the accordance with the UAE Federal Decree by Law no 20 of 2018 on Anti-Money Laundering and combating Financing of Terrorism and illegal Organizations (AML Law), the Cabinet Resolution no 10 of 2019, concerning the implementation of the AML Law, and Cabinet Resolution No 58 of 2020, Regulating Beneficial Owner Procedures (BO Resolution).</p>
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-12 col-xxl-12 fv-row mb-8 fs-5 fw-semibold">
+                                                            <p>I HEREBY DECLARE and UNDERTAKE the Following:</p>
+                                                            <ol>
+                                                                <li class="mb-5">The below information contained herein, are true, accurate and up-to-date</li>
+                                                                <li class="mb-5">My full responsibility towards the implementation of all relevant applicable laws, regulations, policies and procedures when handling BO information</li>
+                                                                <li class="mb-5">All BO information submitted in this declaration are not acting on behalf of any third party (lawyers, agents, corporate service providers, Nominees)</li>
+                                                            </ol>
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-12 col-xxl-12 fv-row mb-8 fs-5 fw-semibold">
+                                                            <p class="fs-5 fw-bold">Please select or add ultimate beneficiary owners</p>
+                                                            <div class="row mt-8 mb-8">
+                                                                <!--begin::Col-->
+                                                                <div class="col-md-12 col-lg-12 col-xxl-12 mb-6">
+                                                                    <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-4" data-kt-button="true">
+                                                                        <span class="form-check form-check-custom form-check-solid form-check-sm">
+                                                                            <input class="form-check-input sub_cat" type="checkbox" name="usage" value="2">
+                                                                        </span>
+                                                                        <span class="ms-5">
+                                                                            <span class="fs-6 fw-semibold d-block">Select All</span>
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                                <!--end::Col-->
+                                                                <!--begin::Col-->
+                                                                <div class="col-md-12 col-lg-12 col-xxl-12 mb-6">
+                                                                    <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-4" data-kt-button="true">
+                                                                        <span class="form-check form-check-custom form-check-solid form-check-sm">
+                                                                            <input class="form-check-input sub_cat" type="checkbox" name="usage" value="2">
+                                                                        </span>
+                                                                        <span class="ms-5">
+                                                                            <p class="fs-3 fw-bold d-block mb-0">Islam Inshasi</p>
+                                                                            <p class="fs-6 d-block text-gray-600">Palestine</p>
+                                                                        </span>
+                                                                        <!-- <span class="ms-5 d-flex align-items-center">
+                                                                            <p class="fs-3 fw-bold d-block mb-0">Edit Details</p>
+                                                                        </span> -->
+                                                                    </label>
+                                                                </div>
+                                                                <!--end::Col-->
+                                                            </div>
+                                                        </div>
+                                                        <!--end::Col-->
+                                                    </div>
+                                                    <!--end::Col-->
+                                                </div>
+
+                                            </div>
+
+                                            <!--end::Wrapper-->
+                                        </div>
+                                        <!--end::Step 8-->
+                                        <!--begin::Step 9-->
                                         <div   data-kt-stepper-element="content">
                                             <!--begin::Wrapper-->
                                             <div class="w-100" >
@@ -3206,7 +3695,7 @@ License: For each use you must have a valid license purchased only from above li
                                                 </div>
 
                                                 <div class="row mb-10">
-                                                    <div class="col-7" style="border-right: 1px solid #bab6b6;">
+                                                    <div class="col-lg-7 col-md-12 col-sm-12 custom_separator">
                                                         <div class="table-responsive">
                                                             <table class="table table-rounded table-striped border">
                                                                 <thead>
@@ -3289,7 +3778,7 @@ License: For each use you must have a valid license purchased only from above li
                                                             </table>
                                                         </div>
                                                     </div>
-                                                    <div class="col-5">
+                                                    <div class="col-lg-5 col-md-12 col-sm-12">
                                                         <div class="col-lg-12 table-responsive"
                                                         style="height: 500px; max-height: 500px;overflow-x: hidden">
                                                             <table class="table">
@@ -3305,10 +3794,10 @@ License: For each use you must have a valid license purchased only from above li
                                                         </div>
                                                         <div class="col-lg-12">
                                                             <div class="row">
-                                                                <div class="col-lg-8">
+                                                                <div class="col-sm-3 col-md-3 col-lg-8">
                                                                     <p style="font-weight: 700;font-size: large;padding: 3px !important;">Total : </p>
                                                                 </div>
-                                                                <div class="col-lg-4">
+                                                                <div class="col-sm-9 col-md-9 col-lg-4">
                                                                     <p style="padding: 3px !important;font-size: large;" class="total">0 AED</p>
                                                                 </div>
                                                             </div>
@@ -3322,9 +3811,9 @@ License: For each use you must have a valid license purchased only from above li
 
                                             <!--end::Wrapper-->
                                         </div>
-                                        <!--end::Step 5-->
+                                        <!--end::Step 9-->
 
-                                        <!--begin::Step 6-->
+                                        <!--begin::Step 10-->
                                         <div data-kt-stepper-element="content">
                                             <!--begin::Wrapper-->
                                             <div class="w-100"  style="width: 100%">
@@ -3374,12 +3863,12 @@ License: For each use you must have a valid license purchased only from above li
                                             <!--end::Wrapper-->
 
                                         </div>
-                                        <!--end::Step 6-->
+                                        <!--end::Step 10-->
 
-                                        <!--begin::Step 7-->
+                                        <!--begin::Step 11-->
                                         <div  data-kt-stepper-element="content">
                                             <!--begin::Wrapper-->
-                                            <div class="w-100" style="min-width: 960px;">
+                                            <div class="w-100" style="width: 100%;">
                                                 <!--begin::Heading-->
                                                 <div class="pb-10 pb-lg-15">
                                                     <!--begin::Title-->
@@ -3403,7 +3892,7 @@ License: For each use you must have a valid license purchased only from above li
                                                 <!--end::Input group-->
                                                 <!--begin::Input group-->
                                                 <div class="row">
-                                                <div class="d-flex flex-column mb-7 fv-row col-6" >
+                                                <div class="d-flex flex-column mb-5 fv-row col-6" >
                                                     <!--begin::Label-->
                                                     <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
                                                         <span class="required">Name On Card</span>
@@ -3416,7 +3905,7 @@ License: For each use you must have a valid license purchased only from above li
                                                 <!--end::Input group-->
 
                                                 <!--begin::Input group-->
-                                                <div class="d-flex flex-column mb-7 fv-row col-6">
+                                                <div class="d-flex flex-column mb-5 fv-row col-6">
                                                     <!--begin::Label-->
                                                     <label class="required fs-6 fw-semibold form-label mb-2">Card Number</label>
                                                     <!--end::Label-->
@@ -3443,7 +3932,7 @@ License: For each use you must have a valid license purchased only from above li
                                                 <!--begin::Input group-->
                                                 <div class="row mb-10">
                                                     <!--begin::Col-->
-                                                    <div class="col-md-8 fv-row">
+                                                    <div class="col-md-8 fv-row mb-5">
                                                         <!--begin::Label-->
                                                         <label class="required fs-6 fw-semibold form-label mb-2">Expiration Date</label>
                                                         <!--end::Label-->
@@ -3494,7 +3983,7 @@ License: For each use you must have a valid license purchased only from above li
                                                     <!--end::Col-->
 
                                                     <!--begin::Col-->
-                                                    <div class="col-md-4 fv-row">
+                                                    <div class="col-md-4 fv-row mb-5">
                                                         <!--begin::Label-->
                                                         <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
                                                             <span class="required">CVV</span>
@@ -3525,7 +4014,7 @@ License: For each use you must have a valid license purchased only from above li
                                                 </div>
                                                 <!--end::Input group-->
                                                 <hr>
-                                                <h2 class="fw-bold d-flex align-items-center text-dark" style=" padding: 0 0 19px;">
+                                                <h2 class="fw-bold d-flex align-items-center text-dark mb-5 mt-10">
                                                     Personal Information
                                                     <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Billing is issued based on your selected account type"></i>
                                                 </h2>
@@ -3537,7 +4026,7 @@ License: For each use you must have a valid license purchased only from above li
                                                         <!--begin::Col-->
 
 
-                                                        <div class="mb-10 fv-row col-6 ">
+                                                        <div class="mb-5 fv-row col-6">
                                                             <!--begin::Label-->
                                                             <label class="form-label mb-3">Email</label>
                                                             <!--end::Label-->
@@ -3546,7 +4035,7 @@ License: For each use you must have a valid license purchased only from above li
                                                             <input type="email" class="form-control form-control-lg" name="email" placeholder="" value=""/>
                                                             <!--end::Input-->
                                                         </div>
-                                                        <div class="mb-10 fv-row col-6 ">
+                                                        <div class="mb-5 fv-row col-6">
                                                             <!--begin::Label-->
                                                             <label class="form-label mb-3">Phone</label>
                                                             <!--end::Label-->
@@ -3555,13 +4044,13 @@ License: For each use you must have a valid license purchased only from above li
                                                             <input type="text" class="form-control form-control-lg" name="phone" placeholder="" value=""/>
                                                             <!--end::Input-->
                                                         </div>
-                                                        <div class="mb-10 fv-row">
+                                                        <div class="mb-5 fv-row">
                                                             <!--begin::Label-->
-                                                            <label class="form-label mb-3">address</label>
+                                                            <label class="form-label mb-3">Address</label>
                                                             <!--end::Label-->
 
                                                             <!--begin::Input-->
-                                                            <input type="text" class="form-control form-control-lg" name="address" placeholder="" value=""/>
+                                                            <textarea class="form-control form-control-lg"></textarea>
                                                             <!--end::Input-->
                                                         </div>
 
@@ -3571,7 +4060,7 @@ License: For each use you must have a valid license purchased only from above li
                                                 <hr>
 
                                                 <!--begin::Input group-->
-                                                <div class="d-flex flex-stack">
+                                                <div class="d-flex flex-stack mt-10">
                                                     <!--begin::Label-->
                                                     <div class="me-5">
                                                         <label class="fs-6 fw-semibold form-label">Save Card for further billing?</label>
@@ -3583,8 +4072,8 @@ License: For each use you must have a valid license purchased only from above li
                                                     <label class="form-check form-switch form-check-custom form-check-solid">
                                                         <input class="form-check-input" type="checkbox" value="1" checked="checked"/>
                                                         <span class="form-check-label fw-semibold text-muted">
-            Save Card
-        </span>
+                                                            Save Card 
+                                                        </span>
                                                     </label>
                                                     <!--end::Switch-->
                                                 </div>
@@ -3592,9 +4081,9 @@ License: For each use you must have a valid license purchased only from above li
                                             </div>
                                             <!--end::Wrapper-->
                                         </div>
-                                        <!--end::Step 7-->
+                                        <!--end::Step 11-->
 
-                                        <!--begin::Step 8-->
+                                        <!--begin::Step 12-->
                                         <div data-kt-stepper-element="content" >
                                             <!--begin::Wrapper-->
                                             <div class="w-100">
@@ -3658,7 +4147,7 @@ License: For each use you must have a valid license purchased only from above li
                                             <!--end::Wrapper-->
 
                                         </div>
-                                        <!--end::Step 8-->
+                                        <!--end::Step 12-->
 
                                         <!--begin::Actions-->
                                         <div class="d-flex flex-stack pt-10">
@@ -3726,15 +4215,15 @@ License: For each use you must have a valid license purchased only from above li
                         <!--begin::Copyright-->
                         <div class="text-dark order-2 order-md-1">
                             <span class="text-muted fw-semibold me-1">2023&copy;</span>
-                            <a href="https://keenthemes.com/" target="_blank" class="text-gray-800 text-hover-primary">Keenthemes</a>
+                            <a href="https://diswitch.com/" target="_blank" class="text-gray-800 text-hover-primary">diswitch</a>
                         </div>
                         <!--end::Copyright-->
 
                         <!--begin::Menu-->
                         <ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
-                            <li class="menu-item"><a href="https://keenthemes.com/" target="_blank" class="menu-link px-2">About</a></li>
+                            <li class="menu-item"><a href="https://diswitch.com/" target="_blank" class="menu-link px-2">About</a></li>
 
-                            <li class="menu-item"><a href="https://devs.keenthemes.com/" target="_blank" class="menu-link px-2">Support</a></li>
+                            <li class="menu-item"><a href="https://diswitch.com/" target="_blank" class="menu-link px-2">Support</a></li>
 
                             <li class="menu-item"><a href="https://1.envato.market/EA4JP" target="_blank" class="menu-link px-2">Purchase</a></li>
                         </ul>
@@ -5121,7 +5610,7 @@ License: For each use you must have a valid license purchased only from above li
 
                         <!--begin::Text-->
                         <div class="p-5 rounded bg-light-info text-dark fw-semibold mw-lg-400px text-start" data-kt-element="message-text">
-                            You can unwatch this repository immediately by clicking here: <a href="https://keenthemes.com/">Keenthemes.com</a>            </div>
+                            You can unwatch this repository immediately by clicking here: <a href="https://diswitch.com/">diswitch.com</a>            </div>
                         <!--end::Text-->
                     </div>
                     <!--end::Wrapper-->
@@ -7021,7 +7510,7 @@ License: For each use you must have a valid license purchased only from above li
                                     <!--begin::Input group-->
                                     <div class="row mb-10">
                                         <!--begin::Col-->
-                                        <div class="col-md-8 fv-row">
+                                        <div class="col-md-8 fv-row mb-3">
                                             <!--begin::Label-->
                                             <label class="required fs-6 fw-semibold form-label mb-2">Expiration Date</label>
                                             <!--end::Label-->
@@ -7072,7 +7561,7 @@ License: For each use you must have a valid license purchased only from above li
                                         <!--end::Col-->
 
                                         <!--begin::Col-->
-                                        <div class="col-md-4 fv-row">
+                                        <div class="col-md-4 fv-row mb-3">
                                             <!--begin::Label-->
                                             <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
                                                 <span class="required">CVV</span>
@@ -8987,8 +9476,7 @@ License: For each use you must have a valid license purchased only from above li
     $("#sub_ul2").hide();
     $("#sub2").hide();
     $("#sub3").hide();
-    $("#share_number").hide();
-    $("#share_per").hide();
+    $(".share_data").hide();
     $(".individual_authorised").prop('disabled', true);
 
 
@@ -9277,6 +9765,8 @@ License: For each use you must have a valid license purchased only from above li
                 $("#share_per").val('');
                 $("#aue_number").val('');
                 $(".foreign_only").css('display','none');
+                $(".corporate_only").css('display','none');
+                $(".custom_hide").css('display','inline');
 
 
 
@@ -9299,6 +9789,8 @@ License: For each use you must have a valid license purchased only from above li
                 $ ("#share_per").val('');
                 $("#aue_number").val('');
                 $(".foreign_only").css('display','none');
+                $(".corporate_only").css('display','inline');
+                $(".custom_hide").css('display','none');
 
             }
             if( this.value == 'resident' ){
@@ -9317,6 +9809,8 @@ License: For each use you must have a valid license purchased only from above li
                 $ ("#share_per").val('');
                 $("#aue_number").val('');
                 $(".foreign_only").css('display','none');
+                $(".corporate_only").css('display','none');
+                $(".custom_hide").css('display','inline');
 
             }
             if( this.value == 'foreign' ){
@@ -9335,6 +9829,8 @@ License: For each use you must have a valid license purchased only from above li
                 $ ("#share_per").val('');
                 $("#aue_number").val('');
                 $(".foreign_only").css('display','inline');
+                $(".corporate_only").css('display','none');
+                $(".custom_hide").css('display','inline');
 
 
 
@@ -9406,13 +9902,7 @@ License: For each use you must have a valid license purchased only from above li
 
 
     $(document).on('click', '#Shareholders', function () {
-        $("#share_number").toggle();
-        $("#share_per").toggle();
-
-        console.log('done')
-
-
-
+        $(".share_data").toggle();
     });
 
      $(document).on('click', '#Add_Persons', function () {
@@ -9458,76 +9948,53 @@ License: For each use you must have a valid license purchased only from above li
          console.log(text);
 
 
-         var gender = ($('.gender option:selected').text() && $('.gender option:selected').text() != 'Gender')?$('.gender option:selected').text() : '';
-         $('#list_persons').after("<tr class=\"odd\" >\n" +
-             "                                                                                                                                            <!--begin::order--->\n" +
-             "                                                                                                                                            <td>\n" +
-             "                                                                                                                                                <span>"+$("#individual_body").val()+"</span>\n" +
-             "                                                                                                                                            </td>\n" +
-             "                                                                                                                                            <!--end::order--->\n" +
-             "                                                                                                                                            <!--begin::order--->\n" +
-             "                                                                                                                                            <td>\n" +
-             "                                                                                                                                                <span>"+$("#first_name").val()+"</span>\n" +
-             "                                                                                                                                            </td>\n" +
-             "                                                                                                                                            <td>\n" +
-             "                                                                                                                                                <span>"+$("#last_name").val()+"</span>\n" +
-             "                                                                                                                                            </td>\n" +
-             "                                                                                                                                            <!--end::order--->\n" +
-             "                                                                                                                                            <!--begin::order--->\n" +
-             "                                                                                                                                            <td>\n" +
-             "                                                                                                                                                <span>"+$("#nationality").val()+"</span>\n" +
-             "                                                                                                                                            </td>\n" +
-             "                                                                                                                                            <!--end::order--->\n" +
-             "\n" +
-             "\n" +
-             "                                                                                                                                            <!--end::Status--->\n" +
-             "\n" +
-             "                                                                                                                                            <!--begin::Amount--->\n" +
-             "                                                                                                                                            <td>"+$("#address").val()+"</td>\n" +
-             "                                                                                                                                            <!--end::Amount---> <!--begin::Amount--->\n" +
-             "                                                                                                                                            <!--end::Amount--->\n" +
-             "\n" +
-             "                                                                                                                                            <!--begin::Amount--->\n" +
-             "                                                                                                                                            <td >"+$("#phone").val()+"</td>\n" +
-             "                                                                                                                                            <td >"+gender+"</td>\n" +
-             "                                                                                                                                            <td >"+$('#dateInput').val()+"</td>\n" +
-             "                                                                                                                                            <!--end::Amount--->\n" +
-             "\n" +
-             "                                                                                                                                            <!--begin::Date--->\n" +
-             "                                                                                                                                            <td>"+$("#share_number").val()+"</td>\n" +
-             "                                                                                                                                            <td>"+text+"</td>\n" +
-             "                                                                                                                                            <!--end::Date--->\n" +
-             "                                                                                                                                            <td>\n" +
-             "                                                                                                                                                <button type=\"button\" data-repeater-delete class=\"btn btn-sm btn-icon btn-light-danger delete_per\">\n" +
-             "                                                                                                                                                    <!--begin::Svg Icon | path: icons/duotune/arrows/arr088.svg-->\n" +
-             "                                                                                                                                                    <span class=\"svg-icon svg-icon-1\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n" +
-             "                                                                <rect opacity=\"0.5\" x=\"7.05025\" y=\"15.5356\" width=\"12\" height=\"2\" rx=\"1\" transform=\"rotate(-45 7.05025 15.5356)\" fill=\"currentColor\"/>\n" +
-             "                                                                <rect x=\"8.46447\" y=\"7.05029\" width=\"12\" height=\"2\" rx=\"1\" transform=\"rotate(45 8.46447 7.05029)\" fill=\"currentColor\"/>\n" +
-             "                                                                </svg></span>\n" +
-             "                                                                                                                                                    <!--end::Svg Icon-->                            </button>\n" +
-             "                                                                                                                                            </td>\n" +
-             "                                                                                                                                        </tr>")
+        var gender = ($('.gender option:selected').text() && $('.gender option:selected').text() != 'Select Gender')?$('.gender option:selected').text() : '';
+
+        $('#list_persons').after("<tr>" +
+            "<td>" +
+                "<span>"+$("#individual_body").val()+"</span>" +
+            "</td>" +
+            " <td>" +
+                "<span>"+$("#first_name").val()+"</span>" +
+            "</td>" +
+            "<td>" +
+                "<span>"+$("#last_name").val()+"</span>" +
+            "</td>" +
+            "<td>" +
+                "<span>"+$("#nationality").val()+"</span>" +
+            "</td>" +
+            "<td>"+$("#address").val()+"</td>" +
+            "<td>"+$("#phone").val()+"</td>" +
+            "<td>"+gender+"</td>" +
+            "<td>"+$('#dateInput').val()+"</td>" +
+            "<td>"+$("#share_number").val()+"</td>" +
+            "<td>"+text+"</td>" +
+            "<td>" +
+                "<button type=\"button\" data-repeater-delete class=\"btn btn-sm btn-icon btn-light-danger delete_per\">" +
+                    "<span class=\"svg-icon svg-icon-1\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">" +
+                    "<rect opacity=\"0.5\" x=\"7.05025\" y=\"15.5356\" width=\"12\" height=\"2\" rx=\"1\" transform=\"rotate(-45 7.05025 15.5356)\" fill=\"currentColor\"/>" +
+                    "<rect x=\"8.46447\" y=\"7.05029\" width=\"12\" height=\"2\" rx=\"1\" transform=\"rotate(45 8.46447 7.05029)\" fill=\"currentColor\"/>" +
+                    "</svg></span>" +
+                "</button>" +
+            "</td>" +
+            "</tr>")
+
+
+        $("#first_name").val('');
+        $("#last_name").val('');
+        $("#nationality").val('');
+        $("#email").val('');
+        $("#phone").val('');
+        $(".gender").val('').change();
+        $("#dateInput").val('');
+        $(".dateInput2").val('');
+        $("#address").val('');
+        $("#share_number").val('');
+        $("#aue_number").val('');
 
 
 
-
-
-
-         $("#first_name").val('');
-         $("#last_name").val('');
-         $("#nationality").val('');
-         $("#email").val('');
-         $("#phone").val('');
-         $(".gender").val('').change();
-         $("#dateInput").val('');
-         $(".dateInput2").val('');
-         $("#address").val('');
-         $("#share_number").val('');
-         $("#aue_number").val('');
-
-
-
-     });
+    });
 
 
     $(document).on('click', '.delete_per', function () {
