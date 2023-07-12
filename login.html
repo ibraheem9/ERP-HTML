@@ -30,12 +30,11 @@
     <!--end::Global Stylesheets Bundle-->
 
     <style>
-        .show_case {
-            background-image: url(./assets/media/logos/background.jpg);
-            background-color: #cccccc;
-            height: 100vh;
-            /* background-position: center center; */
-            background-repeat: no-repeat;
+        html { 
+            background: url(./assets/media/logos/background.jpg) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
             background-size: cover;
         }
         .login-page-heading {
@@ -84,9 +83,9 @@
 <!--end::Head-->
 
 <body>
-    <div class="container-fluid show_case">
+    <div class="container-fluid">
         <div class="offset-lg-1 offset-md-3 col-lg-3 col-md-6 col-sm-12">
-            <div class="card margin-custom py-5">
+            <div class="card margin-custom py-2">
                 <div class="text-center mt-5">
                     <a href="login.html" tabindex="-1"><img src="./assets/media/logos/logo3.png" contain="" position="left center" height="40"></a>
                 </div>
