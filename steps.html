@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <title>ERP-HTML</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="ERP-HTML"/>
+    <meta name="keywords" content="ERP-HTML"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ERP-HTML" />
+    <meta property="og:url" content="https://keenthemes.com/metronic"/>
+    <meta property="og:site_name" content="Keenthemes | Metronic" />
+    <link rel="canonical" href="https://preview.keenthemes.com/metronic8"/>
+    <link rel="shortcut icon" href="assets/media/logos/favicon.ico"/>
+
+    <!--begin::Fonts(mandatory for all pages)-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700"/>        <!--end::Fonts-->
+
+    <!--begin::Vendor Stylesheets(used for this page only)-->
+    <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css"/>
+    <!--end::Vendor Stylesheets-->
+
+    <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css"/>
+    <!--end::Global Stylesheets Bundle-->
+    <style>
+        .form-check-label {
+            color: #63677b!important;
+        }
+        .form-select.form-select-solid {
+            background-color: #eeeeee !important;
+        }
+        .text-primary {
+            color: #1883bf !important;
+        }
+        .btn-check:checked + .btn.btn-white, .btn-check:active + .btn.btn-white, .btn.btn-white:focus:not(.btn-active), .btn.btn-white:hover:not(.btn-active), .btn.btn-white:active:not(.btn-active), .btn.btn-white.active, .btn.btn-white.show, .show > .btn.btn-white {
+            background: #fff !important;
+        }
+        .stepper [data-kt-stepper-element=info].current.custom_content, .stepper [data-kt-stepper-element=content].current.custom_content {
+            width: 750px !important;
+        }
+        .stepper [data-kt-stepper-element=info].current, .stepper [data-kt-stepper-element=content].current {
+            width: auto !important;
+        }
+        .form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-control-plaintext ~ label, .form-floating > .form-select ~ label {
+            opacity: 0.8;
+        }
+        .bank_authorities .btn-check:checked + .btn.btn-outline.btn-outline-dashed, .bank_authorities .btn-check:active + .btn.btn-outline.btn-outline-dashed, .bank_authorities .btn.btn-outline.btn-outline-dashed:focus:not(.btn-active), .bank_authorities .btn.btn-outline.btn-outline-dashed:hover:not(.btn-active), .bank_authorities .btn.btn-outline.btn-outline-dashed:active:not(.btn-active), .bank_authorities .btn.btn-outline.btn-outline-dashed.active, .bank_authorities .btn.btn-outline.btn-outline-dashed.show, .bank_authorities .show > .btn.btn-outline.btn-outline-dashed
+        {
+            border-color: #E1E3EA;
+        }
+
+        .show_case {
+            background-image: url(./assets/media/logos/background.jpg);
+            background-color: #cccccc;
+            /* height: 100vh; */
+            /* background-position: center center; */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .login-page-heading {
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            color: #000;
+            opacity: 0.75;
+        }
+        .custom_btn ,  .custom_btn:hover{
+            height: 48px;
+            background-color: rgb(34, 109, 189) !important;
+            border-color: rgb(34, 109, 189) !important;
+            color: #fff !important;
+        }
+        .btn-check:checked + .btn.btn-primary, .btn-check:active + .btn.btn-primary, .btn.btn-primary:focus:not(.btn-active), .btn.btn-primary:hover:not(.btn-active), .btn.btn-primary:active:not(.btn-active), .btn.btn-primary.active, .btn.btn-primary.show, .show > .btn.btn-primary
+        {
+            background-color: rgb(34, 109, 189) !important;
+            border-color: rgb(34, 109, 189) !important;
+            color: #fff !important;
+        }
+        .margin-custom {
+            margin-top: 5rem !important;
+            margin-bottom: 5rem !important;
+        }
+
+        @media (max-width: 768px){
+            .login-page-heading {
+                font-size: 24px;
+                font-weight: 500;
+            }
+            .margin-custom {
+                margin-top: 2.5rem !important;
+                margin-bottom: 2.5rem !important;
+            }
+        }
+
+        .title {
+            font-size: 2.063rem;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: .52px;
+            color: #000;
+            text-align: left;
+        }
+        .select2-selection {
+            min-height:60px
+        }
+
+        .custom_input {
+            padding: 0.775rem 0.5rem;
+        }
+    </style>
+    <!--Begin::Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5FS8GGP');</script>
+    <!--End::Google Tag Manager -->
+</head>
+<!--end::Head-->
+
+<body>
+    <!--begin::Content wrapper-->
+    <div class="d-flex flex-column flex-column-fluid show_case">
+        <div class="row m-0">
+            <div class="d-flex justify-content-between mt-2">
+                <div class="mt-5">
+                    <a href="javascript:void(0)" type="button" class="text-white fw-bold fs-4">
+                        <i class="fa-solid fa-chevron-left fa-sm" style="color: #fff;font-size: 1.25em;"></i> Home
+                    </a>
+                </div> 
+                <div class="mt-5">
+                    <a href="http://localhost/ERP-HTML/login.html" type="button" class="text-white fw-bold fs-4">
+                        Login
+                    </a>
+                </div> 
+            </div>
+            <div class="offset-lg-2 offset-md-1 col-lg-8 col-md-10 col-sm-12">
+                <!--begin::Content-->
+                <div id="kt_app_content" class="app-content flex-column-fluid">
+                    <!--begin::Content container-->
+                    <div id="kt_app_content_container">
+                        <!--begin::Stepper-->
+                        <div class="stepper stepper-pills stepper-column d-flex flex-column flex-xl-row flex-row-fluid gap-10" id="kt_create_account_stepper">
+                            <!--begin::Aside-->
+                            <div class="card d-flex justify-content-center justify-content-xl-start flex-row-auto" style="display:none !important">
+                                <!--begin::Wrapper-->
+                                <div class="card-body">
+                                    <!--begin::Nav-->
+                                    <div class="stepper-nav">
+                                        <!--begin::Step 1-->
+                                        <div class="stepper-item current" data-kt-stepper-element="nav">
+                                        </div>
+                                        <!--end::Step 1-->
+                                        <!--begin::Step 2-->
+                                        <div class="stepper-item" data-kt-stepper-element="nav">
+                                        </div>
+                                        <!--end::Step 2-->
+                                        <!--begin::Step 2-->
+                                        <div class="stepper-item" data-kt-stepper-element="nav">
+                                        </div>
+                                        <!--end::Step 2-->
+                                        <!--begin::Step 3-->
+                                        <div class="stepper-item" data-kt-stepper-element="nav">
+                                        </div>
+                                        <!--end::Step 3-->
+        
+                                        <!--begin::Step 4-->
+                                        <div class="stepper-item" data-kt-stepper-element="nav">
+                                        </div>
+                                        <!--end::Step 4-->
+                                        <!--begin::Step 5-->
+                                        <div class="stepper-item" data-kt-stepper-element="nav">
+                                        </div>
+                                        <!--end::Step 5-->
+                                        <!--begin::Step 6-->
+                                        <div class="stepper-item" data-kt-stepper-element="nav">
+                                        </div>
+                                        <!--end::Step 6-->
+        
+                                    </div>
+                                    <!--end::Nav-->
+                                </div>
+                                <!--end::Wrapper-->
+                            </div>
+                            <!--begin::Aside-->
+        
+                            <!--begin::Content-->
+                            <div class="card d-flex flex-row-fluid flex-center">
+                                <!--begin::Form-->
+                                <form class="card-body" novalidate="novalidate" id="kt_create_account_form" style="width:100%">
+        
+                                    <!--begin::Step 1-->
+                                    <div class="current" data-kt-stepper-element="content">
+        
+                                        <div style="width:100%">
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-lg-4" style="background:#FAFAFA">
+                                                        <div class="text-left mt-10">
+                                                            <a href="http://localhost/ERP-HTML/login.html" tabindex="-1"><img src="./assets/media/logos/logo3.png" contain="" position="left center" height="35"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="text-center my-10">
+                                                            <h1 class="title">Please enter your <span class="fw-bold">Details</span> </h1>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <div class="my-5">
+                                                                    <input class="form-control " tabindex="1" name="usernameUserInput" id="usernameUserInput" placeholder="First Name" type="text" style="min-height: 60px;">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="my-5">
+                                                                    <input class="form-control" name="" id="" placeholder="Middle Name" type="text" style="min-height: 60px;">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="my-5">
+                                                                    <input class="form-control" name="" id="" placeholder="Last Name" type="text" style="min-height: 60px;">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end::Step 1-->
+        
+                                    <!--begin::Step 2-->
+                                    <div data-kt-stepper-element="content" >
+                                        <!--begin::Wrapper-->
+                                        <div style="width:100%">
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-lg-4" style="background:#FAFAFA">
+                                                        <div class="text-left mt-10">
+                                                            <a href="http://localhost/ERP-HTML/login.html" tabindex="-1"><img src="./assets/media/logos/logo3.png" contain="" position="left center" height="35"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="text-center my-10">
+                                                            <h1 class="title">What is your <span class="fw-bold">mobile number </span>? </h1>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-4">
+                                                                <div class="my-5">
+                                                                    <select class="form-select" data-control="select2" style="min-height: 60px;">
+                                                                        <option value="">971(ARE)</option>
+                                                                        <option value="">972(PLA)</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <div class="my-5">
+                                                                    <input class="form-control" name="" id="" placeholder="Phone Number" type="number" style="min-height: 60px;">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 mb-11">
+                                                                <div class="my-5">
+                                                                    <p class="lead text-muted">Its is recommended to use your Emirates ID linked phone number</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end::Wrapper-->
+                                    </div>
+                                    <!--end::Step 2-->
+        
+                                    <!--begin::Step 3-->
+                                    <div data-kt-stepper-element="content" >
+                                        <!--begin::Wrapper-->
+                                        <div style="width:100%">
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-lg-4" style="background:#FAFAFA">
+                                                        <div class="text-left mt-10">
+                                                            <a href="http://localhost/ERP-HTML/login.html" tabindex="-1"><img src="./assets/media/logos/logo3.png" contain="" position="left center" height="35"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8" style="margin-bottom: 5px;">
+                                                        <div class="row">
+                                                            <div class="col-lg-7">
+                                                                <div class="mt-15 mb-10">
+                                                                    <h1 class="title">Check your <span class="fw-bold">mobile </span> for an <span class="fw-bold">OTP </span> </h1>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-2">
+                                                                        <input class="form-control custom_input" type="text" style="min-height: 60px;" placeholder="-">
+                                                                    </div>
+                                                                    <div class="col-2">
+                                                                        <input class="form-control custom_input" type="text" style="min-height: 60px;" placeholder="-">
+                                                                    </div>
+                                                                    <div class="col-2">
+                                                                        <input class="form-control custom_input" type="text" style="min-height: 60px;" placeholder="-">
+                                                                    </div>
+                                                                    <div class="col-2">
+                                                                        <input class="form-control custom_input" type="text" style="min-height: 60px;" placeholder="-">
+                                                                    </div>
+                                                                    <div class="col-2">
+                                                                        <input class="form-control custom_input" type="text" style="min-height: 60px;" placeholder="-">
+                                                                    </div>
+                                                                    <div class="col-2">
+                                                                        <input class="form-control custom_input" type="text" style="min-height: 60px;" placeholder="-">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="my-10">
+                                                                    <h4 class="d-inline">Did not receive the OTP ?</h4>
+                                                                    <span class="text-muted">  Resend (0:09)</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 d-none d-lg-block">
+                                                                <div class="text-center mt-10">
+                                                                    <a href="#" tabindex="-1"><img src="./assets/media/logos/otp.png" contain="" position="left center" style="width: 100%;"></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end::Wrapper-->
+                                    </div>
+                                    <!--end::Step 3-->
+        
+                                    <!--begin::Step 4-->
+                                    <div data-kt-stepper-element="content" >
+                                        <!--begin::Wrapper-->
+                                        <div style="width:100%">
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-lg-4" style="background:#FAFAFA">
+                                                        <div class="text-left mt-10">
+                                                            <a href="http://localhost/ERP-HTML/login.html" tabindex="-1"><img src="./assets/media/logos/logo3.png" contain="" position="left center" height="35"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8" style="margin-bottom: 13.4rem !important;">
+                                                        <div class="text-center my-10">
+                                                            <h1 class="title">What is your <span class="fw-bold">Email Address </span>? </h1>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <input class="form-control" name="" id="" placeholder="Email Address" type="email" style="min-height: 60px;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end::Wrapper-->
+                                    </div>
+                                    <!--end::Step 4-->
+        
+                                    <!--begin::Step 5-->
+                                    <div data-kt-stepper-element="content" >
+                                        <!--begin::Wrapper-->
+                                        <div style="width:100%">
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-lg-4" style="background:#FAFAFA">
+                                                        <div class="text-left mt-10">
+                                                            <a href="http://localhost/ERP-HTML/login.html" tabindex="-1"><img src="./assets/media/logos/logo3.png" contain="" position="left center" height="35"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8" style="margin-bottom: 5px;">
+                                                        <div class="row">
+                                                            <div class="col-lg-7">
+                                                                <div class="mt-15 mb-10">
+                                                                    <h1 class="title">Check your <span class="fw-bold">mobile </span> for an <span class="fw-bold">OTP </span> </h1>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-2">
+                                                                        <input class="form-control custom_input" type="text" style="min-height: 60px;" placeholder="-">
+                                                                    </div>
+                                                                    <div class="col-2">
+                                                                        <input class="form-control custom_input" type="text" style="min-height: 60px;" placeholder="-">
+                                                                    </div>
+                                                                    <div class="col-2">
+                                                                        <input class="form-control custom_input" type="text" style="min-height: 60px;" placeholder="-">
+                                                                    </div>
+                                                                    <div class="col-2">
+                                                                        <input class="form-control custom_input" type="text" style="min-height: 60px;" placeholder="-">
+                                                                    </div>
+                                                                    <div class="col-2">
+                                                                        <input class="form-control custom_input" type="text" style="min-height: 60px;" placeholder="-">
+                                                                    </div>
+                                                                    <div class="col-2">
+                                                                        <input class="form-control custom_input" type="text" style="min-height: 60px;" placeholder="-">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="my-10">
+                                                                    <h4 class="d-inline">Did not receive the OTP ?</h4>
+                                                                    <span class="text-muted">  Resend (0:09)</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 d-none d-lg-block">
+                                                                <div class="text-center mt-10">
+                                                                    <a href="#" tabindex="-1"><img src="./assets/media/logos/otp.png" contain="" position="left center" style="width: 100%;"></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end::Wrapper-->
+                                    </div>
+                                    <!--end::Step 5-->
+        
+                                    <!--begin::Step 6-->
+                                    <div data-kt-stepper-element="content" >
+                                        <!--begin::Wrapper-->
+                                        <div style="width:100%">
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-lg-4" style="background:#FAFAFA">
+                                                        <div class="text-left mt-10">
+                                                            <a href="http://localhost/ERP-HTML/login.html" tabindex="-1"><img src="./assets/media/logos/logo3.png" contain="" position="left center" height="35"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8" style="margin-bottom: 4px;">
+                                                        <div class="text-center my-10">
+                                                            <h1 class="title">Create your <span class="fw-bold">Password </span> ?</h1>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12 mb-8">
+                                                                <div class="form-floating">
+                                                                    <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com"/>
+                                                                    <label for="floatingInputValue">Your Username</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 mb-8">
+                                                                <div class="form-floating">
+                                                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password"/>
+                                                                    <label for="floatingPassword">Password</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 mb-8">
+                                                                <div class="form-floating">
+                                                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password"/>
+                                                                    <label for="floatingPassword">Confirm Password</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end::Wrapper-->
+                                    </div>
+                                    <!--end::Step 6-->
+        
+                                    <!--begin::Step 7-->
+                                    <div data-kt-stepper-element="content" >
+                                        <!--begin::Wrapper-->
+                                        <div style="width:100%">
+                                            <div class="card text-center">
+                                                <div class="row">
+                                                    <div class="col-lg-12 mb-15">
+                                                        <a href="http://localhost/ERP-HTML/login.html" tabindex="-1"><img src="./assets/media/logos/logo3.png" contain="" position="left center" height="35"></a>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="my-5">
+                                                            <i class="bi bi-check-circle fs-4x" style="color:#06bc68"></i>
+                                                        </div>
+                                                        <div class="my-5">
+                                                            <h1>Congratulations</h1>
+                                                        </div>
+                                                        <div class="my-5">
+                                                            <p class="lead">Your <span class="fw-bold">Account</span> has been created successfully</p>
+                                                        </div>
+                                                        <div class="mt-15">
+                                                            <a href="http://localhost/ERP-HTML/login.html" type="button" class="btn btn-lg btn-primary">
+                                                                Go To Login
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end::Wrapper-->
+                                    </div>
+                                    <!--end::Step 7-->
+        
+        
+                                    <!--begin::Actions-->
+                                    <div class="d-flex flex-stack pt-10">
+                                        <!--begin::Wrapper-->
+                                        <div class="mr-2">
+                                            <button type="button" class="btn btn-lg btn-light-primary me-3" data-kt-stepper-action="previous">
+                                                <!--begin::Svg Icon | path: icons/duotune/arrows/arr063.svg-->
+                                                <span class="svg-icon svg-icon-4 me-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect opacity="0.5" x="6" y="11" width="13" height="2" rx="1" fill="currentColor"/>
+                                                    <path d="M8.56569 11.4343L12.75 7.25C13.1642 6.83579 13.1642 6.16421 12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75L5.70711 11.2929C5.31658 11.6834 5.31658 12.3166 5.70711 12.7071L11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25C13.1642 17.8358 13.1642 17.1642 12.75 16.75L8.56569 12.5657C8.25327 12.2533 8.25327 11.7467 8.56569 11.4343Z" fill="currentColor"/>
+                                                    </svg>
+                                                </span>
+                                                <!--end::Svg Icon--> 
+                                                Back
+                                            </button>
+                                        </div>
+                                        <!--end::Wrapper-->
+        
+                                        <!--begin::Wrapper-->
+                                        <div>
+                                            <button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="next">
+                                                Continue
+                                                <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
+                                                <span class="svg-icon svg-icon-4 ms-1 me-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="currentColor"/>
+                                                        <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="currentColor"/>
+                                                    </svg>
+                                                </span>
+                                                <!--end::Svg Icon-->
+                                            </button>
+                                        </div>
+                                        <!--end::Wrapper-->
+                                    </div>
+                                    <!--end::Actions-->
+                                </form>
+                                <!--end::Form-->
+                            </div>
+                            <!--end::Content-->
+                        </div>
+                        <!--end::Stepper-->        </div>
+                    <!--end::Content container-->
+                </div>
+                <!--end::Content-->
+            </div>
+        </div>
+    </div>
+    <!--end::Content wrapper-->
+    <script>
+        var hostUrl = "assets/index.html";
+    </script>
+    
+    <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+    <script src="assets/plugins/global/plugins.bundle.js"></script>
+    <script src="assets/js/scripts.bundle.js"></script>
+    <script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
+    <!--end::Global Javascript Bundle-->
+    
+    <!--begin::Vendors Javascript(used for this page only)-->
+    <script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
+    <script src="assets/js/custom/pages/pricing/general.js"></script>
+    <script src="assets/plugins/custom/formrepeater/formrepeater.bundle.js"></script><!--end::Vendors Javascript-->
+    
+    <!--begin::Custom Javascript(used for this page only)-->
+    <script src="assets/js/custom/utilities/modals/create-account.js"></script>
+    <script src="assets/js/widgets.bundle.js"></script>
+    <script src="assets/js/custom/widgets.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <title>ERP-HTML</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="ERP-HTML"/>
+    <meta name="keywords" content="ERP-HTML"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ERP-HTML" />
+    <meta property="og:url" content="https://keenthemes.com/metronic"/>
+    <meta property="og:site_name" content="Keenthemes | Metronic" />
+    <link rel="canonical" href="https://preview.keenthemes.com/metronic8"/>
+    <link rel="shortcut icon" href="assets/media/logos/favicon.ico"/>
+
+    <!--begin::Fonts(mandatory for all pages)-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700"/>        <!--end::Fonts-->
+
+    <!--begin::Vendor Stylesheets(used for this page only)-->
+    <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css"/>
+    <!--end::Vendor Stylesheets-->
+
+    <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css"/>
+    <!--end::Global Stylesheets Bundle-->
+
+    <style>
+        .show_case {
+            background-image: url(./assets/media/logos/background.jpg);
+            background-color: #cccccc;
+            height: 100vh;
+            /* background-position: center center; */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .login-page-heading {
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            color: #000;
+            opacity: 0.75;
+        }
+        .custom_btn ,  .custom_btn:hover{
+            height: 48px;
+            background-color: rgb(34, 109, 189) !important;
+            border-color: rgb(34, 109, 189) !important;
+            color: #fff !important;
+        }
+        .btn-check:checked + .btn.btn-primary, .btn-check:active + .btn.btn-primary, .btn.btn-primary:focus:not(.btn-active), .btn.btn-primary:hover:not(.btn-active), .btn.btn-primary:active:not(.btn-active), .btn.btn-primary.active, .btn.btn-primary.show, .show > .btn.btn-primary
+        {
+            background-color: rgb(34, 109, 189) !important;
+            border-color: rgb(34, 109, 189) !important;
+            color: #fff !important;
+        }
+        .margin-custom {
+            margin-top: 5rem !important;
+            margin-bottom: 5rem !important;
+        }
+
+        @media (max-width: 768px){
+            .login-page-heading {
+                font-size: 24px;
+                font-weight: 500;
+            }
+            .margin-custom {
+                margin-top: 2.5rem !important;
+                margin-bottom: 2.5rem !important;
+            }
+        }
+    </style>
+    <!--Begin::Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5FS8GGP');</script>
+    <!--End::Google Tag Manager -->
+</head>
+<!--end::Head-->
+
+<body>
+    <div class="container-fluid show_case">
+        <div class="offset-lg-1 offset-md-3 col-lg-3 col-md-6 col-sm-12">
+            <div class="card margin-custom py-5">
+                <div class="text-center mt-5">
+                    <a href="http://localhost/ERP-HTML/login.html" tabindex="-1"><img src="./assets/media/logos/logo3.png" contain="" position="left center" height="40"></a>
+                </div>
+                <div class="my-6 text-center"><span class="login-page-heading"> Login</span></div>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <div class="mb-5">
+                            <input class="form-control" tabindex="1" name="usernameUserInput" id="usernameUserInput" placeholder="Email" type="text" style="min-height: 60px;">
+                        </div>
+                        <div class="mb-5">
+                            <input class="form-control" name="password" id="password" placeholder="Password" type="text" style="min-height: 60px;">
+                        </div>
+                        <div class="buttons">
+                            <div class="d-flex py-5 justify-content-between">
+                                <div class="form-check user-select-none">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <div class="spacer"></div>
+                                <a href="" style="color: rgb(34, 109, 189)" class="forget-password">
+                                    Forgot Password
+                                </a>
+                            </div> 
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary custom_btn" type="button">Login</button>
+                            </div>
+
+                            <div class="separator separator-content border-secondary my-15"><span style="color:#86868b">or</span></div>
+
+                            <div class="d-grid gap-2">
+                                <a href="#" class="border border-dark btn btn-outline me-2 mb-5"><img src="./assets/media/logos/self_service.png" height="25" class="mx-3"> Sign in with UAE PASS</a>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <a href="steps.html" class="btn btn-active-secondary"> Create Account</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
