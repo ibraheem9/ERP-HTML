@@ -37,8 +37,12 @@
             -o-background-size: cover;
             background-size: cover;
         }
+        /* Disables scrolling */
+        /* body {
+            overflow: hidden; 
+        } */
         .login-page-heading {
-            font-size: 30px;
+            font-size: 28px;
             font-weight: 700;
             letter-spacing: 0.6px;
             color: #000;
@@ -56,20 +60,18 @@
             border-color: rgb(34, 109, 189) !important;
             color: #fff !important;
         }
-        .margin-custom {
-            margin-top: 5rem !important;
-            margin-bottom: 5rem !important;
-        }
 
         @media (max-width: 768px){
             .login-page-heading {
                 font-size: 24px;
                 font-weight: 500;
             }
-            .margin-custom {
-                margin-top: 2.5rem !important;
-                margin-bottom: 2.5rem !important;
-            }
+        }
+        .login-box {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
         }
     </style>
     <!--Begin::Google Tag Manager -->
@@ -83,45 +85,47 @@
 <!--end::Head-->
 
 <body>
-    <div class="container-fluid">
-        <div class="offset-lg-1 offset-md-3 col-lg-3 col-md-6 col-sm-12">
-            <div class="card margin-custom py-2">
-                <div class="text-center mt-5">
-                    <a href="login.html" tabindex="-1"><img src="./assets/media/logos/logo3.png" contain="" position="left center" height="40"></a>
-                </div>
-                <div class="my-6 text-center"><span class="login-page-heading"> Login</span></div>
-                <div class="row">
-                    <div class="col-10 offset-1">
-                        <div class="mb-5">
-                            <input class="form-control" tabindex="1" name="usernameUserInput" id="usernameUserInput" placeholder="Email" type="text" style="min-height: 60px;">
-                        </div>
-                        <div class="mb-5">
-                            <input class="form-control" name="password" id="password" placeholder="Password" type="text" style="min-height: 60px;">
-                        </div>
-                        <div class="buttons">
-                            <div class="d-flex py-5 justify-content-between">
-                                <div class="form-check user-select-none">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Remember me
-                                    </label>
+    <div class="container-fluid login-box">
+        <div class="row">
+            <div class="offset-lg-1 offset-md-3 col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="text-center mt-4">
+                        <a href="login.html" tabindex="-1"><img src="./assets/media/logos/shams-logo .svg" contain="" position="left center" height="80"></a>
+                    </div>
+                    <div class="my-6 text-center"><span class="login-page-heading"> Login</span></div>
+                    <div class="row">
+                        <div class="col-10 offset-1">
+                            <div class="mb-4">
+                                <input class="form-control" tabindex="1" name="usernameUserInput" id="usernameUserInput" placeholder="Email" type="text" style="min-height: 55px;">
+                            </div>
+                            <div class="mb-4">
+                                <input class="form-control" name="password" id="password" placeholder="Password" type="text" style="min-height: 55px;">
+                            </div>
+                            <div class="buttons">
+                                <div class="d-flex py-5 justify-content-between">
+                                    <div class="form-check user-select-none">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <div class="spacer"></div>
+                                    <a href="" style="color: rgb(34, 109, 189)" class="forget-password">
+                                        Forgot Password
+                                    </a>
+                                </div> 
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary custom_btn" type="button">Login</button>
                                 </div>
-                                <div class="spacer"></div>
-                                <a href="" style="color: rgb(34, 109, 189)" class="forget-password">
-                                    Forgot Password
-                                </a>
-                            </div> 
-                            <div class="d-grid gap-2">
-                                <button class="btn btn-primary custom_btn" type="button">Login</button>
-                            </div>
-
-                            <div class="separator separator-content border-secondary my-15"><span style="color:#86868b">or</span></div>
-
-                            <div class="d-grid gap-2">
-                                <a href="#" class="border border-dark btn btn-outline me-2 mb-5"><img src="./assets/media/logos/self_service.png" height="25" class="mx-3"> Sign in with UAE PASS</a>
-                            </div>
-                            <div class="d-grid gap-2">
-                                <a href="steps.html" class="btn btn-active-secondary"> Create Account</a>
+    
+                                <div class="separator separator-content border-secondary my-15"><span style="color:#86868b">or</span></div>
+    
+                                <div class="d-grid gap-2">
+                                    <a href="#" class="border border-dark btn btn-outline mb-5"><img src="./assets/media/logos/self_service.png" height="25" class="mx-2"> Sign in with UAE PASS</a>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <a href="steps.html" class="btn btn-active-secondary"> Create Account</a>
+                                </div>
                             </div>
                         </div>
                     </div>
