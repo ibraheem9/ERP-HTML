@@ -91,6 +91,12 @@ License: For each use you must have a valid license purchased only from above li
                 border-bottom: 1px solid #bab6b6;
             }
         }
+
+        .custom .spinner-border {
+            border: 0.25em solid currentColor;
+            border-right-color: transparent;
+            animation: .75s linear infinite spinner-border;
+        }
     </style>
     <!--Begin::Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -3051,159 +3057,89 @@ License: For each use you must have a valid license purchased only from above li
                                                             <!--end::Label-->
 
                                                             <!--begin::Repeater-->
-                                                            <div id="kt_ecommerce_add_product_options">
+                                                            <div>
                                                                 <!--begin::Form group-->
                                                                 <div class="form-group">
-                                                                    <div data-repeater-list="kt_ecommerce_add_product_options" class="d-flex flex-column gap-3">
-                                                                        <div data-repeater-item class="form-group d-flex flex-wrap align-items-center gap-4">
-
-                                                                            <div class="d-flex flex-wrap align-items-center text-gray-600 gap-5 mb-7">
-                                                                                <span>Type Persons :</span>
-
-                                                                                <!--begin::Radio-->
-                                                                                <div class="form-check form-check-custom form-check-solid">
-                                                                                    <input class="form-check-input" type="checkbox" name="conditions" value="" id="as" checked="checked">
-                                                                                    <label class="form-check-label" for="as">
-                                                                                        Authorised Signatory
-                                                                                    </label>
-                                                                                </div>
-                                                                                <!--end::Radio-->
-
-                                                                                <!--begin::Radio-->
-                                                                                <div class="form-check form-check-custom form-check-solid">
-                                                                                    <input class="form-check-input" type="checkbox" name="conditions" value="" id="directors">
-                                                                                    <label class="form-check-label" for="directors">
-                                                                                        Directors
-                                                                                    </label>
-                                                                                </div>
-                                                                                <!--end::Radio-->
-
-                                                                                <!--begin::Radio-->
-                                                                                <div class="form-check form-check-custom form-check-solid">
-                                                                                    <input class="form-check-input" type="checkbox" name="conditions" value="" id="secretary">
-                                                                                    <label class="form-check-label" for="secretary">
-                                                                                        Secretary
-
-                                                                                    </label>
-                                                                                </div>
-                                                                                <!--end::Radio-->
-                                                                                <!--begin::Radio-->
-                                                                                <div class="form-check form-check-custom form-check-solid">
-                                                                                    <input class="form-check-input" type="checkbox" name="conditions" value="" id="Shareholders">
-                                                                                    <label class="form-check-label" for="Shareholders">
-                                                                                        Shareholders
-
-                                                                                    </label>
-                                                                                </div>
-                                                                                <!--end::Radio-->
-                                                                            </div>
-
-                                                                            <div class="row foreign_only" style="display:none">
-                                                                                <div class="d-flex align-items-center">
-                                                                                    <div class="col-lg-5">
-                                                                                        <label class="me-5 form-label">Passport Image</label>
-                                                                                    </div>
-                                                                                    <div class="col-lg-12">
-                                                                                        <input type="file" class="form-control"/>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="row">
-                                                                                <!--begin::Select2-->
-                                                                                <div class="col-lg-3 mb-2">
-                                                                                    <label class="form-label">Type</label>
-                                                                                    <select class="form-select" id="individual_body" name="Authorised_Signatory" data-placeholder="Select a variation" data-kt-ecommerce-catalog-add-product="product_option">
-                                                                                        <option value="Resident">ٌResident</option>
-                                                                                        <option value="Citizen">Citizen</option>
-                                                                                        <option value="Foreign">Foreign</option>
-                                                                                        <option value="Corporate">Corporate</option>
-                                                                                    </select>
-                                                                                </div>
-    
-                                                                                <!--begin::Input-->
-                                                                                <div class="col-lg-3 mb-2 form-group" id="aue_form">
-                                                                                    <label class="form-label">UAE Number</label>
-                                                                                    <input type="text" class="form-control  Pass_Number" name="product_option_value" placeholder="UAE" id="aue_number" />
-                                                                                    <a id="aue"  style="position: absolute; top: 40px; right: 13px;" >
-                                                                                        <img src="assets/media/avatars/aue.png" class="w-50px " alt="">
-                                                                                    </a>
-                                                                                </div>
-                                                                                <div class="col-lg-3 mb-2">
-                                                                                    <label class="form-label">First Name En</label>
-                                                                                    <input type="text" class="form-control individual_authorised" name="product_option_value" placeholder="" id="first_name" />
-                                                                                </div>
-                                                                                <div class="col-lg-3 mb-2">
-                                                                                    <label class="form-label">Last Name En</label>
-                                                                                    <input type="text" class="form-control individual_authorised" name="product_option_value" placeholder="" id="last_name" />
-                                                                                </div>
-                                                                                <div class="col-lg-3 mb-2">
-                                                                                    <label class="form-label">First Name Ar</label>
-                                                                                    <input type="text" class="form-control individual_authorised" name="product_option_value" placeholder="" id="first_name" />
-                                                                                </div>
-                                                                                <div class="col-lg-3 mb-2">
-                                                                                    <label class="form-label">Last Name Ar</label>
-                                                                                    <input type="text" class="form-control individual_authorised" name="product_option_value" placeholder="" id="last_name" />
-                                                                                </div>
-                                                                                <div class="col-lg-3 mb-2">
-                                                                                    <label class="form-label">Email</label>
-                                                                                    <input type="email" class="form-control individual_authorised" name="product_option_value" placeholder="" id="Email" />
-                                                                                </div>
-                                                                                <div class="col-lg-3 mb-2">
-                                                                                    <label class="form-label">Nationality</label>
-                                                                                    <input type="text" class="form-control individual_authorised" name="product_option_value" placeholder="" id="nationality" />
-                                                                                </div>
-                                                                                <div class="col-lg-3 mb-2" >
-                                                                                    <label class="form-label">Address</label>
-                                                                                    <input type="text" class="form-control individual_authorised" name="product_option_value" placeholder="" id="address" />
-                                                                                </div>
-                                                                                <div class="col-lg-3 mb-2">
-                                                                                    <label class="form-label">Phone</label>
-                                                                                    <input type="text" class="form-control" name="product_option_value" placeholder="" id="phone" />
-                                                                                </div>
-                                                                                <div class="col-lg-3 mb-2 custom_hide">
-                                                                                    <label class="form-label">Gender</label>
-                                                                                    <select class="form-select gender">
-                                                                                        <option value="" selected>Select Gender</option>
-                                                                                        <option value="1">Male</option>
-                                                                                        <option value="2">Female</option>
-                                                                                    </select>
-                                                                                </div>
-                                                                                <div class="col-lg-3 mb-2 custom_hide">
-                                                                                    <label class="form-label">BOD</label>
-                                                                                    <input class="form-control kt_datepicker_1" placeholder="Pick a date"/>
-                                                                                </div>
-                                                                                <div class="col-lg-3 mb-2 custom_hide">
-                                                                                    <label class="form-label">Date Issued Passport</label>
-                                                                                        <input class="form-control kt_datepicker_1" placeholder="Pick a date"/>
-                                                                                </div>
-                                                                                <div class="col-lg-3 mb-2 custom_hide">
-                                                                                    <label class="form-label">Date Expired Passport</label>
-                                                                                        <input class="form-control kt_datepicker_1" placeholder="Pick a date"/>
-                                                                                </div>
-                                                                                <div class="col-lg-3 mb-2 corporate_only" style="display:none">
-                                                                                    <label class="form-label">Date Issued License</label>
-                                                                                        <input class="form-control kt_datepicker_1" placeholder="Pick a date"/>
-                                                                                </div>
-                                                                                <div class="col-lg-3 mb-2 corporate_only" style="display:none">
-                                                                                    <label class="form-label">Date Issued License</label>
-                                                                                        <input class="form-control kt_datepicker_1" placeholder="Pick a date"/>
-                                                                                </div>
-                                                                                <div class="col-lg-3 mb-2 share_data" >
-                                                                                    <label class="form-label">Share Number</label>
-                                                                                    <input type="text" class="form-control " name="product_option_value" placeholder=""  id="share_number" />
-                                                                                </div>
-                                                                                <div class="col-lg-3 mb-2 share_data" >
-                                                                                    <label class="form-label">Share Percentage</label>
-                                                                                    <input type="text" class="form-control " name="product_option_value" placeholder=""  id="share_per" />
-                                                                                </div>
-
-                                                                                <!--end::Input-->
-
-                                                                            </div>
-
-
-
+                                                                    <div class="d-flex gap-5 mb-5">
+                                                                        <span>Type Persons :</span>
+                                                                        <!--begin::Radio-->
+                                                                        <div class="form-check form-check-custom form-check-solid">
+                                                                            <input class="form-check-input" type="checkbox" name="conditions" value="" id="as" checked="checked">
+                                                                            <label class="form-check-label" for="as">
+                                                                                Authorised Signatory
+                                                                            </label>
                                                                         </div>
+                                                                        <!--end::Radio-->
+                                                                        <!--begin::Radio-->
+                                                                        <div class="form-check form-check-custom form-check-solid">
+                                                                            <input class="form-check-input" type="checkbox" name="conditions" value="" id="directors">
+                                                                            <label class="form-check-label" for="directors">
+                                                                                Directors
+                                                                            </label>
+                                                                        </div>
+                                                                        <!--end::Radio-->
+                                                                        <!--begin::Radio-->
+                                                                        <div class="form-check form-check-custom form-check-solid">
+                                                                            <input class="form-check-input" type="checkbox" name="conditions" value="" id="secretary">
+                                                                            <label class="form-check-label" for="secretary">
+                                                                                Secretary
+
+                                                                            </label>
+                                                                        </div>
+                                                                        <!--end::Radio-->
+                                                                        <!--begin::Radio-->
+                                                                        <div class="form-check form-check-custom form-check-solid">
+                                                                            <input class="form-check-input" type="checkbox" name="conditions" value="" id="Shareholders">
+                                                                            <label class="form-check-label" for="Shareholders">
+                                                                                Shareholders
+
+                                                                            </label>
+                                                                        </div>
+                                                                        <!--end::Radio-->
+                                                                    </div>
+                                                                    <div class="row mb-5">
+                                                                        <div class="col-lg-2">
+                                                                            <label class="me-5 form-label">Passport Image</label>
+                                                                        </div>
+                                                                        <div class="col-lg-5">
+                                                                            <input type="file" class="form-control"/>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <!--begin::Select2-->
+                                                                        <div class="col-lg-3 mb-2">
+                                                                            <label class="form-label">Type</label>
+                                                                            <select class="form-select" id="individual_body" name="Authorised_Signatory" data-placeholder="Select a variation" data-kt-ecommerce-catalog-add-product="product_option">
+                                                                                <option value="Resident">ٌResident</option>
+                                                                                <option value="Citizen">Citizen</option>
+                                                                                <option value="Foreign">Foreign</option>
+                                                                                <option value="Corporate">Corporate</option>
+                                                                            </select>
+                                                                        </div>
+
+                                                                        <div class="col-lg-3 mb-2">
+                                                                            <label class="form-label">Email</label>
+                                                                            <input type="email" class="form-control individual_authorised" name="product_option_value" placeholder="" id="Email" />
+                                                                        </div>
+                                                                        <div class="col-lg-3 mb-2" >
+                                                                            <label class="form-label">Address</label>
+                                                                            <input type="text" class="form-control individual_authorised" name="product_option_value" placeholder="" id="address" />
+                                                                        </div>
+                                                                        <div class="col-lg-3 mb-2">
+                                                                            <label class="form-label">Phone</label>
+                                                                            <input type="text" class="form-control" name="product_option_value" placeholder="" id="phone" />
+                                                                        </div>
+                                                                        <div class="col-lg-3 mb-2 share_data" >
+                                                                            <label class="form-label">Share Number</label>
+                                                                            <input type="text" class="form-control " name="product_option_value" placeholder=""  id="share_number" />
+                                                                        </div>
+                                                                        <div class="col-lg-3 mb-2 share_data" >
+                                                                            <label class="form-label">Share Percentage</label>
+                                                                            <input type="text" class="form-control " name="product_option_value" placeholder=""  id="share_per" />
+                                                                        </div>
+
+                                                                        <!--end::Input-->
+
                                                                     </div>
                                                                 </div>
                                                                 <!--end::Form group-->
@@ -3213,9 +3149,10 @@ License: For each use you must have a valid license purchased only from above li
                                                                     <button type="button" data-repeater-create class="btn btn-sm btn-light-primary" id="Add_Persons">
                                                                         <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
                                                                         <span class="svg-icon svg-icon-2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect opacity="0.5" x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="currentColor"/>
-<rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor"/>
-</svg></span>
+                                                                            <rect opacity="0.5" x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="currentColor"/>
+                                                                            <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor"/>
+                                                                            </svg>
+                                                                        </span>
                                                                         <!--end::Svg Icon--> Add Persons
                                                                     </button>
                                                                 </div>
@@ -3258,6 +3195,7 @@ License: For each use you must have a valid license purchased only from above li
                                                                             <!-- <th>DOB</th> -->
                                                                             <th>Share Number</th>
                                                                             <th>Type</th>
+                                                                            <th>Is Verified</th>
                                                                             <th>Delete</th>
                                                                         </tr>
                                                                     </thead>
@@ -9669,7 +9607,7 @@ License: For each use you must have a valid license purchased only from above li
     $("#sub2").hide();
     $("#sub3").hide();
     $(".share_data").hide();
-    $(".individual_authorised").prop('disabled', true);
+    // $(".individual_authorised").prop('disabled', true);
 
 
     function show_m() {
@@ -9705,12 +9643,12 @@ License: For each use you must have a valid license purchased only from above li
 
 
     }
-    $(document).on('click', '.toast-top-right', function () {
-        $(".individual_authorised").prop('disabled', false);
-        $('#aue').show();
+    // $(document).on('click', '.toast-top-right', function () {
+    //     $(".individual_authorised").prop('disabled', false);
+    //     $('#aue').show();
 
 
-    });
+    // });
 
     $('#sub_ul1').hide();
     $('#sub_ul2').hide();
@@ -9926,111 +9864,6 @@ License: For each use you must have a valid license purchased only from above li
 
 
         });
-        // var amount_capita =$('#amount_capital').val();
-        // var number_shares =  $('#number_shares').val();
-        // var amount_shares =  $('#amount_shares').val();
-        //
-        // if( this.value == 'corporate' ){
-        //
-        //     $('.individual_form').hide();
-        //     $('.corporate_form').show();
-        //
-        // }
-
-
-        $('#individual_body').on('change', function() {
-
-            if( this.value == 'Citizen' ){
-
-
-                $(".individual_authorised").prop('disabled', true);
-                $(".Pass_Number").show();
-                $("#aue_form").show();
-
-                $("#first_name").val('');
-                $("#last_name").val('');
-                $("#nationality").val('');
-                $("#email").val('');
-                $("#phone").val('');
-                $("#address").val('');
-                $("#share_number").val('');
-                $("#share_per").val('');
-                $("#aue_number").val('');
-                $(".foreign_only").css('display','none');
-                $(".corporate_only").css('display','none');
-                $(".custom_hide").css('display','inline');
-
-
-
-
-            }
-
-            if( this.value == 'Corporate' ){
-
-                $(".individual_authorised").prop('disabled', false);
-                $(".Pass_Number").hide();
-                $("#aue_form").hide();
-
-                $("#first_name").val('');
-                $("#last_name").val('');
-                $("#nationality").val('');
-                $("#email").val('');
-                $ ("#phone").val('');
-                $ ("#address").val('');
-                $ ("#share_number").val('');
-                $ ("#share_per").val('');
-                $("#aue_number").val('');
-                $(".foreign_only").css('display','none');
-                $(".corporate_only").css('display','inline');
-                $(".custom_hide").css('display','none');
-
-            }
-            if( this.value == 'Resident' ){
-
-                $(".individual_authorised").prop('disabled', true);
-                $(".Pass_Number").show();
-                $("#aue_form").show();
-
-                $("#first_name").val('');
-                $("#last_name").val('');
-                $("#nationality").val('');
-                $("#email").val('');
-                $ ("#phone").val('');
-                $ ("#address").val('');
-                $ ("#share_number").val('');
-                $ ("#share_per").val('');
-                $("#aue_number").val('');
-                $(".foreign_only").css('display','none');
-                $(".corporate_only").css('display','none');
-                $(".custom_hide").css('display','inline');
-
-            }
-            if( this.value == 'Foreign' ){
-
-                $(".individual_authorised").prop('disabled', false);
-                $(".Pass_Number").show();
-                $("#aue_form").show();
-
-                $("#first_name").val('');
-                $("#last_name").val('');
-                $("#nationality").val('');
-                $("#email").val('');
-                $ ("#phone").val('');
-                $ ("#address").val('');
-                $ ("#share_number").val('');
-                $ ("#share_per").val('');
-                $("#aue_number").val('');
-                $(".foreign_only").css('display','inline');
-                $(".corporate_only").css('display','none');
-                $(".custom_hide").css('display','inline');
-
-
-
-            }
-        });
-
-
-
 
     $(document).on('click', '.packeg_tab1', function () {
         $('.packeg_tab_h1').css('color', '#fff');
@@ -10140,17 +9973,17 @@ License: For each use you must have a valid license purchased only from above li
          console.log(text);
 
 
-        var gender = ($('.gender option:selected').text() && $('.gender option:selected').text() != 'Select Gender')?$('.gender option:selected').text() : '';
+        // var gender = ($('.gender option:selected').text() && $('.gender option:selected').text() != 'Select Gender')?$('.gender option:selected').text() : '';
 
         $('#list_persons').after("<tr>" +
             "<td>" +
                 "<span>"+$("#individual_body").val()+"</span>" +
             "</td>" +
-            " <td>" +
-                "<span>"+$("#first_name").val()+"</span>" +
+            " <td>" + //"+$("#first_name").val()+"
+                "<span></span>" +
             "</td>" +
-            "<td>" +
-                "<span>"+$("#last_name").val()+"</span>" +
+            "<td>" + //"+$("#last_name").val()+"
+                "<span></span>" +
             "</td>" +
             // "<td>" +
             //     "<span>"+$("#nationality").val()+"</span>" +
@@ -10161,6 +9994,11 @@ License: For each use you must have a valid license purchased only from above li
             // "<td>"+$('#dateInput').val()+"</td>" +
             "<td>"+$("#share_number").val()+"</td>" +
             "<td>"+text+"</td>" +
+            "<td class='custom'>"+
+                "<div class='spinner-border' role='status'>"+
+                    "<span class='visually-hidden'>Loading...</span>"+
+                "</div>"+
+            "</td>" +
             "<td>" +
                 "<button type=\"button\" data-repeater-delete class=\"btn btn-sm btn-icon btn-light-danger delete_per\">" +
                     "<span class=\"svg-icon svg-icon-1\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">" +
