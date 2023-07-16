@@ -23,7 +23,11 @@ var KTCreateAccount = function () {
 		// Stepper change event
 		stepperObj.on('kt.stepper.changed', function (stepper) {
 			console.log(stepperObj.getCurrentStepIndex());
-
+			if(stepperObj.getCurrentStepIndex() == '7'){
+				$('.last_btn').hide();
+			} else {
+				$('.last_btn').show();
+			}
 			if (stepperObj.getCurrentStepIndex() === 4) {
 				formSubmitButton.classList.remove('d-none');
 				formSubmitButton.classList.add('d-inline-block');
