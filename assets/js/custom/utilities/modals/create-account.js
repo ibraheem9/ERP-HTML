@@ -22,7 +22,7 @@ var KTCreateAccount = function () {
 
 		// Stepper change event
 		stepperObj.on('kt.stepper.changed', function (stepper) {
-			console.log(stepperObj.getCurrentStepIndex());
+			// console.log(stepperObj.getCurrentStepIndex());
 			if(stepperObj.getCurrentStepIndex() == '7'){
 				$('.last_btn').hide();
 			} else {
@@ -45,14 +45,14 @@ var KTCreateAccount = function () {
 
 		// Validation before going to next page
 		stepperObj.on('kt.stepper.next', function (stepper) {
-			console.log('stepper.next');
+			// console.log('stepper.next');
 
 			// Validate form before change stepper step
 			var validator = validations[stepper.getCurrentStepIndex() - 1]; // get validator for currnt step
 
 			if (validator) {
 				validator.validate().then(function (status) {
-					console.log('validated!');
+					// console.log('validated!');
 
 					if (status == 'Valid') {
 						stepper.goNext();
@@ -81,7 +81,7 @@ var KTCreateAccount = function () {
 
 		// Prev event
 		stepperObj.on('kt.stepper.previous', function (stepper) {
-			console.log('stepper.previous');
+			// console.log('stepper.previous');
 
 			stepper.goPrevious();
 			KTUtil.scrollTop();
@@ -94,7 +94,7 @@ var KTCreateAccount = function () {
 			var validator = validations[3]; // get validator for last form
 
 			validator.validate().then(function (status) {
-				console.log('validated!');
+				// console.log('validated!');
 
 				if (status == 'Valid') {
 					// Prevent default button action
