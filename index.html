@@ -68,9 +68,6 @@ Website: http://www.keenthemes.com
             border-color: #E1E3EA;
         }
         @media (min-width: 992px){
-            .full {
-                min-width: 970px
-            }
             .custom_separator {
                 border-right: 1px solid #bab6b6;
             }
@@ -90,6 +87,9 @@ Website: http://www.keenthemes.com
             border: 0.25em solid currentColor;
             border-right-color: transparent;
             animation: .75s linear infinite spinner-border;
+        }
+        .full {
+            width: 100%;
         }
     </style>
 </head>
@@ -507,7 +507,7 @@ Website: http://www.keenthemes.com
                                 <form class="card-body" novalidate="novalidate" id="kt_create_account_form" style="width:100%;padding: 2rem 1.25rem;">
                                     <!--begin::Step 1-->
                                     <div class="current" data-kt-stepper-element="content">
-                                        <div class="w-100">
+                                        <div class="w-100 full">
                                             <div class="app-content flex-column-fluid">
                                                 <!--begin::Content container-->
                                                 <div>
@@ -1328,7 +1328,7 @@ Website: http://www.keenthemes.com
 
                                                     <div class="row">
                                                         <!--begin::Col-->
-                                                        <div class="col-lg-4 res mb-3" id="res1">
+                                                        <div class="col-lg-4 col-md-6 res mb-3" id="res1">
                                                             <!--begin::Option-->
                                                             <input class="btn-check reserved" type="radio" name="reserved" value="yes">
                                                             <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center">
@@ -1348,7 +1348,7 @@ Website: http://www.keenthemes.com
                                                         <!--end::Col-->
 
                                                         <!--begin::Col-->
-                                                        <div class="col-lg-4 res mb-3" id="res2">
+                                                        <div class="col-lg-4 col-md-6 res mb-3" id="res2">
                                                             <!--begin::Option-->
                                                             <input class="btn-check reserved" type="radio" name="reserved" value="no">
                                                             <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center">
@@ -1377,7 +1377,7 @@ Website: http://www.keenthemes.com
 
                                                     <div class="row">
                                                         <!--begin::Col-->
-                                                        <div class="col-lg-4 mb-3" id="lang1">
+                                                        <div class="col-lg-4 col-md-6 mb-3" id="lang1">
                                                             <!--begin::Option-->
                                                             <input class="btn-check" type="radio" name="lan" value="en">
                                                             <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center">
@@ -1397,7 +1397,7 @@ Website: http://www.keenthemes.com
                                                         <!--end::Col-->
 
                                                         <!--begin::Col-->
-                                                        <div class="col-lg-4 mb-3" id="lang2">
+                                                        <div class="col-lg-4 col-md-6 mb-3" id="lang2">
                                                             <!--begin::Option-->
                                                             <input class="btn-check" type="radio" name="lan" value="ar">
                                                             <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center">
@@ -1424,7 +1424,7 @@ Website: http://www.keenthemes.com
                                                     <label class="form-label fw-semibold fs-4 mb-7">Provide company name
                                                         options ? <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Proposed company name in order of preference"></i></label>
                                                     <!--begin::Col-->
-                                                    <div class="col-sm-12 col-sm-12 col-lg-4">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4">
                                                         <div class="d-flex flex-column mb-7 fv-row">
                                                             <!--begin::Label-->
                                                             <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
@@ -1438,7 +1438,7 @@ Website: http://www.keenthemes.com
                                                     <!--end::Col-->
 
                                                     <!--begin::Col-->
-                                                    <div class="col-sm-12 col-sm-12 col-lg-4">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4">
                                                         <div class="d-flex flex-column mb-7 fv-row">
                                                             <!--begin::Label-->
                                                             <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
@@ -1451,7 +1451,7 @@ Website: http://www.keenthemes.com
                                                     </div>
                                                     <!--end::Col-->
                                                     <!--begin::Col-->
-                                                    <div class="col-sm-12 col-sm-12 col-lg-4">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4">
                                                         <div class="d-flex flex-column mb-7 fv-row">
                                                             <!--begin::Label-->
                                                             <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
@@ -1470,7 +1470,7 @@ Website: http://www.keenthemes.com
                                                     <label class="form-label fw-semibold fs-4 mb-7">Name reservation
                                                         details </label>
                                                     <!--begin::Col-->
-                                                    <div class="col-sm-12 col-sm-12 col-lg-6">
+                                                    <div class="col-sm-12 col-md-6 col-lg-6">
                                                         <div class="d-flex flex-column mb-7 fv-row">
                                                             <!--begin::Label-->
                                                             <label
@@ -1496,7 +1496,7 @@ Website: http://www.keenthemes.com
                                                             data-bs-toggle="tooltip"
                                                             title="A direct translation involves changing an English word to its Arabic version on the basis of the definition of the word, whereas a phonetic translation is done by replicating what the word phonetically sounds like in English, into Arabic."></i></label>
                                                     <!--begin::Col-->
-                                                    <div class="col-lg-4" id="trans1">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4" id="trans1">
                                                         <!--begin::Option-->
                                                         <input class="btn-check" type="radio" name="trans"
                                                             value="direct">
@@ -1519,7 +1519,7 @@ Website: http://www.keenthemes.com
                                                     <!--end::Col-->
 
                                                     <!--begin::Col-->
-                                                    <div class="col-lg-4" id="trans2">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4" id="trans2">
                                                         <!--begin::Option-->
                                                         <input class="btn-check" type="radio" name="trans" value="phonetic">
                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center mb-10"
@@ -1540,7 +1540,7 @@ Website: http://www.keenthemes.com
                                                     <!--end::Col-->
 
                                                     <!--begin::Col-->
-                                                    <div class="col-lg-4" id="trans3">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4" id="trans3">
                                                         <!--begin::Option-->
                                                         <input class="btn-check" type="radio" name="trans" value="self">
                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center mb-10" >
@@ -1565,7 +1565,7 @@ Website: http://www.keenthemes.com
                                                 <div class="row mt-7 self_trans_div" style="display:none">
                                                     <label class="form-label fw-semibold fs-4 mb-7">Translated company name <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Description of self translated name"></i></label>
                                                     <!--begin::Col-->
-                                                    <div class="col-sm-12 col-sm-12 col-lg-4">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4">
                                                         <div class="d-flex flex-column mb-7 fv-row">
                                                             <!--begin::Label-->
                                                             <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
@@ -1579,7 +1579,7 @@ Website: http://www.keenthemes.com
                                                     <!--end::Col-->
 
                                                     <!--begin::Col-->
-                                                    <div class="col-sm-12 col-sm-12 col-lg-4">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4">
                                                         <div class="d-flex flex-column mb-7 fv-row">
                                                             <!--begin::Label-->
                                                             <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
@@ -1592,7 +1592,7 @@ Website: http://www.keenthemes.com
                                                     </div>
                                                     <!--end::Col-->
                                                     <!--begin::Col-->
-                                                    <div class="col-sm-12 col-sm-12 col-lg-4">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4">
                                                         <div class="d-flex flex-column mb-7 fv-row">
                                                             <!--begin::Label-->
                                                             <label
@@ -1616,10 +1616,9 @@ Website: http://www.keenthemes.com
                                     <!--end::Step 2-->
 
                                     <!--begin::Step 3-->
-                                    <div data-kt-stepper-element="content" class="custom_content"
-                                        style="max-width: 100%;">
+                                    <div data-kt-stepper-element="content" class="custom_content">
                                         <!--begin::Wrapper-->
-                                        <div class="w-100 full" style="width:100%">
+                                        <div class="w-100 full">
                                             <!--begin::Heading-->
                                             <div class="pb-10 pb-lg-12">
                                                 <!--begin::Title-->
@@ -1630,7 +1629,7 @@ Website: http://www.keenthemes.com
                                             <!--end::Heading-->
                                             <div class="row">
                                                 <!--begin::Col-->
-                                                <div class="col-lg-4" id="main1">
+                                                <div class="col-sm-12 col-md-4 col-lg-4" id="main1">
                                                     <!--begin::Option-->
                                                     <input type="radio" class="btn-check" name="account_type" value="personal" checked="checked" id="Media">
                                                     <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center mb-10" for="Media">
@@ -1655,7 +1654,7 @@ Website: http://www.keenthemes.com
                                                 <!--end::Col-->
 
                                                 <!--begin::Col-->
-                                                <div class="col-lg-4" id="main2">
+                                                <div class="col-sm-12 col-md-4 col-lg-4" id="main2">
                                                     <!--begin::Option-->
                                                     <input type="radio" class="btn-check" name="account_type" value="corporate" id="">
                                                     <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center mb-10" >
@@ -1678,7 +1677,7 @@ Website: http://www.keenthemes.com
                                                 </div>
                                                 <!--end::Col-->
                                                 <!--begin::Col-->
-                                                <div class="col-lg-4" id="main3">
+                                                <div class="col-sm-12 col-md-4 col-lg-4" id="main3">
                                                     <!--begin::Option-->
                                                     <input type="radio" class="btn-check" name="account_type" value="corporate" id="">
                                                     <label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center mb-10" >
@@ -1716,7 +1715,7 @@ Website: http://www.keenthemes.com
                                                 <!--begin::Row-->
                                                 <div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1">
                                                     <!--begin::Col-->
-                                                    <div class="col-md-4 col-lg-4 col-xxl-4" id="colm1">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4" id="colm1">
                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
                                                             <span class="ms-5">
                                                                 <span class="fs-4 fw-bold mb-1 d-block">Manufacturing</span>
@@ -1727,7 +1726,7 @@ Website: http://www.keenthemes.com
                                                     <!--end::Col-->
 
                                                     <!--begin::Col-->
-                                                    <div class="col-md-4 col-lg-4 col-xxl-4" id="colm2">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4" id="colm2">
                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
                                                             <!--begin::Radio button-->
                                                             <!--end::Radio button-->
@@ -1740,7 +1739,7 @@ Website: http://www.keenthemes.com
                                                     <!--end::Col-->
 
                                                     <!--begin::Col-->
-                                                    <div class="col-md-4 col-lg-4 col-xxl-4" id="colm3">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4" id="colm3">
                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
                                                             <!--begin::Radio button-->
                                                             <!--end::Radio button-->
@@ -1758,7 +1757,7 @@ Website: http://www.keenthemes.com
                                                 <!--begin::Row-->
                                                 <div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1">
                                                     <!--begin::Col-->
-                                                    <div class="col-md-4 col-lg-4 col-xxl-4">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4">
                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
                                                             <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
                                                                 <input class="form-check-input sub_cat" type="checkbox" name="usage" value="1">
@@ -1773,7 +1772,7 @@ Website: http://www.keenthemes.com
                                                     <!--end::Col-->
 
                                                     <!--begin::Col-->
-                                                    <div class="col-md-4 col-lg-4 col-xxl-4">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4">
                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
                                                             <!--begin::Radio button-->
                                                             <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
@@ -1789,7 +1788,7 @@ Website: http://www.keenthemes.com
                                                     <!--end::Col-->
 
                                                     <!--begin::Col-->
-                                                    <div class="col-md-4 col-lg-4 col-xxl-4">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4">
                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
                                                             <!--begin::Radio button-->
                                                             <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
@@ -1810,7 +1809,7 @@ Website: http://www.keenthemes.com
                                                 <!--begin::Row-->
                                                 <div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]" data-kt-initialized="1">
                                                     <!--begin::Col-->
-                                                    <div class="col-md-4 col-lg-4 col-xxl-4">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4">
                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6 active" data-kt-button="true">
                                                             <!--begin::Radio button-->
                                                             <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
@@ -1827,7 +1826,7 @@ Website: http://www.keenthemes.com
                                                     <!--end::Col-->
 
                                                     <!--begin::Col-->
-                                                    <div class="col-md-4 col-lg-4 col-xxl-4">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4">
                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
                                                             <!--begin::Radio button-->
                                                             <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
@@ -1843,7 +1842,7 @@ Website: http://www.keenthemes.com
                                                     <!--end::Col-->
 
                                                     <!--begin::Col-->
-                                                    <div class="col-md-4 col-lg-4 col-xxl-4">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4">
                                                         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
                                                             <!--begin::Radio button-->
                                                             <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
@@ -2472,7 +2471,7 @@ Website: http://www.keenthemes.com
                                     <!--begin::Step 4-->
                                     <div data-kt-stepper-element="content">
                                         <!--begin::Wrapper-->
-                                        <div class="w-100" style="width: 100%;">
+                                        <div class="w-100 full">
                                             <!--begin::Heading-->
                                             <div class="pb-10 pb-lg-15">
                                                 <!--begin::Title-->
@@ -2489,7 +2488,7 @@ Website: http://www.keenthemes.com
                                                 <div class="col-md-12 fv-row">
                                                     <div class="row fv-row">
                                                         <!--begin::Col-->
-                                                        <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
                                                             <input type="text" class="form-control form-control-lg" name="amount_capital" id="amount_capital" placeholder="Amount of Capital" value="100000" />
                                                             <div class="fs-7" style="padding-top: 10px;">Total Capital
                                                             </div>
@@ -2497,12 +2496,12 @@ Website: http://www.keenthemes.com
                                                         <!--end::Col-->
 
                                                         <!--begin::Col-->
-                                                        <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
                                                             <input type="text" class="form-control form-control-lg" id="number_shares" name="number_shares" placeholder="Number Shares" value="100" />
                                                             <div class="fs-7" style="padding-top: 10px;">Number of Shares</div>
                                                         </div>
 
-                                                        <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
                                                             <!--begin::Input-->
                                                             <input type="text" class="form-control form-control-lg" name="amount_shares" id="amount_shares" placeholder="Amount of share" value="100" disabled />
                                                             <div class="fs-7" style="padding-top: 10px;">Value Per share.</div>
@@ -2589,7 +2588,7 @@ Website: http://www.keenthemes.com
                                                                 </div>
                                                                 <div class="row">
                                                                     <!--begin::Select2-->
-                                                                    <div class="col-lg-3 mb-2">
+                                                                    <div class="col-lg-3 col-md-6 mb-2">
                                                                         <label class="form-label">Type</label>
                                                                         <select class="form-select" id="individual_body" name="Authorised_Signatory" data-placeholder="Select a variation" data-kt-ecommerce-catalog-add-product="product_option">
                                                                             <option value="Resident">ٌResident</option>
@@ -2599,23 +2598,23 @@ Website: http://www.keenthemes.com
                                                                         </select>
                                                                     </div>
 
-                                                                    <div class="col-lg-3 mb-2">
+                                                                    <div class="col-lg-3 col-md-6 mb-2">
                                                                         <label class="form-label">Email</label>
                                                                         <input type="email" class="form-control individual_authorised" name="product_option_value" placeholder="" id="Email" />
                                                                     </div>
-                                                                    <div class="col-lg-3 mb-2">
+                                                                    <div class="col-lg-3 col-md-6 mb-2">
                                                                         <label class="form-label">Address</label>
                                                                         <input type="text" class="form-control individual_authorised" name="product_option_value" placeholder="" id="address" />
                                                                     </div>
-                                                                    <div class="col-lg-3 mb-2">
+                                                                    <div class="col-lg-3 col-md-6 mb-2">
                                                                         <label class="form-label">Phone</label>
                                                                         <input type="text" class="form-control"  name="product_option_value" placeholder="" id="phone" />
                                                                     </div>
-                                                                    <div class="col-lg-3 mb-2 share_data">
+                                                                    <div class="col-lg-3 col-md-6 mb-2 share_data">
                                                                         <label class="form-label">Share Number</label>
                                                                         <input type="text" class="form-control" name="product_option_value" placeholder="" id="share_number" />
                                                                     </div>
-                                                                    <div class="col-lg-3 mb-2 share_data">
+                                                                    <div class="col-lg-3 col-md-6 mb-2 share_data">
                                                                         <label class="form-label">Share Percentage</label>
                                                                         <input type="text" class="form-control" name="product_option_value" placeholder="" id="share_per" />
                                                                     </div>
@@ -2710,7 +2709,7 @@ Website: http://www.keenthemes.com
                                                 <!--begin::Col-->
                                                 <div class="col-lg-12 fv-row">
                                                     <div class="row">
-                                                        <div class="col-lg-6 mb-5">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
                                                             <!--begin::Input group-->
                                                             <div class="form-floating">
                                                                 <input type="email" class="form-control" id="director_tenure" placeholder="Ex:5" value="5" />
@@ -2718,7 +2717,7 @@ Website: http://www.keenthemes.com
                                                             </div>
                                                             <!--end::Input group-->
                                                         </div>
-                                                        <div class="col-lg-6 mb-5">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
                                                             <!--begin::Input group-->
                                                             <div class="form-floating">
                                                                 <select class="form-select" id="dispute_settlement_authority" aria-label="Floating label select example">
@@ -2729,7 +2728,7 @@ Website: http://www.keenthemes.com
                                                             </div>
                                                             <!--end::Input group-->
                                                         </div>
-                                                        <div class="col-lg-6 mb-5">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
                                                             <!--begin::Input group-->
                                                             <div class="form-floating">
                                                                 <input type="email" class="form-control" id="take_decision" placeholder="Ex:75%" value="75" />
@@ -2737,7 +2736,7 @@ Website: http://www.keenthemes.com
                                                             </div>
                                                             <!--end::Input group-->
                                                         </div>
-                                                        <div class="col-lg-6 mb-5">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
                                                             <!--begin::Input group-->
                                                             <div class="form-floating">
                                                                 <input type="email" class="form-control" id="dismiss_director" placeholder="Ex:75%" value="75" />
@@ -2745,7 +2744,7 @@ Website: http://www.keenthemes.com
                                                             </div>
                                                             <!--end::Input group-->
                                                         </div>
-                                                        <div class="col-lg-6 mb-5">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
                                                             <!--begin::Input group-->
                                                             <div class="form-floating">
                                                                 <input type="email" class="form-control" id="MOA" placeholder="Ex:75%" value="75" />
@@ -2753,7 +2752,7 @@ Website: http://www.keenthemes.com
                                                             </div>
                                                             <!--end::Input group-->
                                                         </div>
-                                                        <div class="col-lg-6 mb-5">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
                                                             <!--begin::Input group-->
                                                             <div class="form-floating">
                                                                 <input type="email" class="form-control" id="general_assembly" placeholder="Ex:75%" value="75" />
@@ -3023,7 +3022,7 @@ Website: http://www.keenthemes.com
                                     <!--begin::Step 7-->
                                     <div data-kt-stepper-element="content">
                                         <!--begin::Wrapper-->
-                                        <div class="w-100 bank_authorities full" style="width:100%">
+                                        <div class="w-100 bank_authorities full">
                                             <div class="pb-10 pb-lg-15">
                                                 <!--begin::Title-->
                                                 <h2 class="fw-bold d-flex align-items-center text-dark">
@@ -3045,7 +3044,7 @@ Website: http://www.keenthemes.com
                                                         </label>
                                                         <div>
                                                             <div class="row mt-8 mb-8">
-                                                                <div class="col-lg-4 mb-3">
+                                                                <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
                                                                     <div class="form-check form-check-custom form-check-solid form-check-sm me-3">
                                                                         <input class="form-check-input" type="checkbox" value="" id="all" />
                                                                         <label class="form-check-label" for="all">
@@ -3053,7 +3052,7 @@ Website: http://www.keenthemes.com
                                                                         </label>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-lg-4 mb-3">
+                                                                <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
                                                                     <div class="form-check form-check-custom form-check-solid form-check-sm me-3">
                                                                         <input class="form-check-input" type="checkbox" value="" id="islam" />
                                                                         <label class="form-check-label" for="islam">
@@ -3061,7 +3060,7 @@ Website: http://www.keenthemes.com
                                                                         </label>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-lg-4 mb-3">
+                                                                <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
                                                                     <div class="form-check form-check-custom form-check-solid form-check-sm me-3">
                                                                         <input class="form-check-input" type="checkbox" value="" id="ahmed" />
                                                                         <label class="form-check-label" for="ahmed">
@@ -3086,7 +3085,7 @@ Website: http://www.keenthemes.com
                                                         </label>
                                                         <div>
                                                             <div class="row mt-8 mb-8">
-                                                                <div class="col-lg-4 mb-3">
+                                                                <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
                                                                     <div class="form-check form-check-custom form-check-solid form-check-sm me-3">
                                                                         <input class="form-check-input" type="checkbox" value="" id="alll" />
                                                                         <label class="form-check-label" for="alll">
@@ -3094,7 +3093,7 @@ Website: http://www.keenthemes.com
                                                                         </label>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-lg-4 mb-3">
+                                                                <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
                                                                     <div class="form-check form-check-custom form-check-solid form-check-sm me-3">
                                                                         <input class="form-check-input" type="checkbox" value="" id="islam2" />
                                                                         <label class="form-check-label" for="islam2">
@@ -3102,7 +3101,7 @@ Website: http://www.keenthemes.com
                                                                         </label>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-lg-4 mb-3">
+                                                                <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
                                                                     <div class="form-check form-check-custom form-check-solid form-check-sm me-3">
                                                                         <input class="form-check-input" type="checkbox" value="" id="ahmed2" />
                                                                         <label class="form-check-label" for="ahmed2">
@@ -3332,7 +3331,7 @@ Website: http://www.keenthemes.com
                                     <!--begin::Step 9-->
                                     <div data-kt-stepper-element="content">
                                         <!--begin::Wrapper-->
-                                        <div class="w-100" style="width: 100%;">
+                                        <div class="w-100 full">
                                             <!--begin::Heading-->
                                             <div class="pb-10 pb-lg-15">
                                                 <!--begin::Title-->
@@ -3467,7 +3466,7 @@ Website: http://www.keenthemes.com
                                     <!--begin::Step 10-->
                                     <div data-kt-stepper-element="content">
                                         <!--begin::Wrapper-->
-                                        <div class="w-100" style="width: 100%">
+                                        <div class="w-100 full">
                                             <!--begin::Heading-->
                                             <div class="pb-10 pb-lg-12">
                                                 <!--begin::Title-->
@@ -3507,7 +3506,7 @@ Website: http://www.keenthemes.com
                                     <!--begin::Step 11-->
                                     <div data-kt-stepper-element="content">
                                         <!--begin::Wrapper-->
-                                        <div class="w-100" style="width: 100%;">
+                                        <div class="w-100 full">
                                             <!--begin::Heading-->
                                             <div class="pb-10 pb-lg-15">
                                                 <!--begin::Title-->
@@ -3714,7 +3713,7 @@ Website: http://www.keenthemes.com
                                     <!--begin::Step 12-->
                                     <div data-kt-stepper-element="content">
                                         <!--begin::Wrapper-->
-                                        <div class="w-100" style="width: 100%;">
+                                        <div class="w-100 full">
                                             <!--begin::Heading-->
                                             <div class="pb-8 pb-lg-10">
                                                 <!--begin::Title-->
